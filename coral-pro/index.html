@@ -759,6 +759,8 @@ function detect(){
 function pad(n){return (n<10?"0":"")+n}
 function el(tag,cls,txt){var e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined&&txt!==null)e.textContent=txt;return e}
 function fmt(v,d){if(v===null||v===undefined||isNaN(v))return "—";return d===0?Math.round(v).toLocaleString("en-US"):Number(v).toFixed(d)}
+function ord(n){if(lang!=="en")return "第 "+n+" 百分位";if(!Number.isInteger(n))return n+"th pct";var t=n%100,s=(t>10&&t<14)?"th":({1:"st",2:"nd",3:"rd"}[n%10]||"th");return n+s+" pct"}
+function dec(v){if(v===null||v===undefined||isNaN(v))return "—";return Number.isInteger(v)?v.toFixed(1):String(v)}
 function P(p){if(lang!=="en")return p;var en=paddlesEn[p.rec]||{};var o={};for(var k in p)o[k]=p[k];for(var j in en)o[j]=en[j];o.rv=en.rv||p.rv;return o}
 function L(p){return p.labs[lab]||{}}
 
@@ -775,10 +777,10 @@ function sorted(){
 }
 function metricOf(p){
  var d=L(p);
- if(sortMode==="forgive")return {v:fmt(d.tw,2).replace(/0$/,""),u:UI[lang].metric.forgive,bar:d.tw==null?0:(d.tw-5)/3};
+ if(sortMode==="forgive")return {v:dec(d.tw),u:UI[lang].metric.forgive,bar:d.tw==null?0:(d.tw-5)/3};
  if(sortMode==="spin")return {v:fmt(d.rpm,0),u:UI[lang].metric.spin,bar:d.rpm==null?0:(d.rpm-1900)/700};
  if(sortMode==="reach")return {v:p.handle+"″",u:UI[lang].metric.reach,bar:(p.handle-5)/1};
- return {v:String(d.sw),u:UI[lang].metric.speed,bar:d.sw==null?0:(130-d.sw)/30};
+ return {v:dec(d.sw),u:UI[lang].metric.speed,bar:d.sw==null?0:(130-d.sw)/30};
 }
 function renderSeg(){
  var s=document.getElementById("sortSeg"),l=document.getElementById("labSeg");
@@ -829,12 +831,12 @@ function renderCard(arr){
  var sg=el("div","sg");
  function cell(val,lbl,extra){var x=el("div");x.appendChild(el("b",null,val));x.appendChild(el("span",null,lbl));if(extra){x.appendChild(el("br"));x.appendChild(el("em",null,extra))}sg.appendChild(x)}
  var pp=d.p||null;
- cell(d.sw==null?"—":String(d.sw),u.sw,pp?(lang==="en"?Math.round(pp.sw)+"th pct":"第 "+Math.round(pp.sw)+" 百分位"):null);
- cell(d.tw==null?"—":String(d.tw),u.tw,pp?(lang==="en"?Math.round(pp.tw)+"th pct":"第 "+Math.round(pp.tw)+" 百分位"):null);
- cell(fmt(d.rpm,0),u.rpm,pp?(lang==="en"?pp.rpm+"th pct":"第 "+pp.rpm+" 百分位"):null);
- cell(d.st==null?"—":d.st+" oz",u.st);
- cell(d.sv==null?"—":d.sv+" mph",u.sv);
- if(lab==="kew")cell(d.cor==null?"—":d.cor.toFixed(3),u.cor);else cell(d.pv==null?"—":d.pv+" mph",u.pv);
+ cell(dec(d.sw),u.sw,pp?ord(Math.round(pp.sw)):null);
+ cell(dec(d.tw),u.tw,pp?ord(Math.round(pp.tw)):null);
+ cell(fmt(d.rpm,0),u.rpm,pp?ord(pp.rpm):null);
+ cell(d.st==null?"—":dec(d.st)+" oz",u.st);
+ cell(d.sv==null?"—":dec(d.sv)+" mph",u.sv);
+ if(lab==="kew")cell(d.cor==null?"—":d.cor.toFixed(3),u.cor);else cell(d.pv==null?"—":dec(d.pv)+" mph",u.pv);
  c.appendChild(sg);
  var spec=el("p","small");spec.style.margin="10px 0 0";
  spec.textContent=u.fac+"："+p.fac+" · "+u.dims+"："+p.dims+" · "+u.handle+"："+p.handle+"″ · "+u.usap+"："+p.usap;
