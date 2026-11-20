@@ -4,161 +4,301 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Paddle Review · 新手忍者的進化之路 · Coral Pro 特輯</title>
+<meta name="description" content="Coach Ninja 的 Coral Pro 特輯：轉速、揮拍重量、扭轉重量三個數字怎麼讀，Coral Pro 寬體、混合、加長三拍型實測比較，每個數字都附出處。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Serif+TC:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,600;0,800;1,500;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Serif+TC:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,600;0,800;0,900;1,500;1,700&display=swap" rel="stylesheet">
 <style>
-:root{--paper:#F4F0E7;--ink:#161513;--soft:#5d5850;--rule:#cfc7b6;--acc:#A3311D;--card:#ebe5d8;
---serif:"Noto Serif TC","Songti TC",serif;--disp:"Playfair Display","Noto Serif TC",serif;--mono:"IBM Plex Mono",ui-monospace,monospace}
+:root{--paper:#F4F0E7;--ink:#161513;--soft:#5b564e;--rule:#cdc5b3;--acc:#A3311D;--accl:#f1dcd4;--card:#ece6d9;--cream:#fbf6ec;
+--serif:"Noto Serif TC","Songti TC","PMingLiU",serif;--disp:"Playfair Display","Noto Serif TC",serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace}
 *{box-sizing:border-box}
-html,body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);-webkit-font-smoothing:antialiased}
+html,body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 html:not(.en) [data-l="en"],html.en [data-l="zh"]{display:none!important}
 html.en h1,html.en h2,html.en h3,html.en .disp{font-family:var(--disp)}
 a{color:inherit}
 button{font:inherit;color:inherit;cursor:pointer}
-/* header */
-.top{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--ink)}
-.top .row{display:flex;align-items:center;gap:14px;max-width:1240px;margin:0 auto;padding:10px 28px}
-.mast{font-family:var(--disp);font-weight:800;font-size:22px;letter-spacing:-.01em;white-space:nowrap;text-decoration:none}
+/* ---------- running header ---------- */
+.top{position:sticky;top:0;z-index:30;background:var(--paper);border-bottom:1px solid var(--ink)}
+.top .row{display:flex;align-items:center;gap:12px;max-width:1240px;margin:0 auto;padding:10px 28px}
+.mast{font-family:var(--disp);font-weight:900;font-size:23px;letter-spacing:-.015em;white-space:nowrap;text-decoration:none}
 .mast i{font-weight:500;color:var(--acc)}
-.issue{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);white-space:nowrap}
+.issue{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .sp{flex:1}
-.tbtn{background:none;border:1px solid var(--ink);border-radius:999px;padding:5px 12px;font-family:var(--mono);font-size:12px}
+.tbtn{background:none;border:1px solid var(--ink);border-radius:999px;padding:5px 12px;font-family:var(--mono);font-size:12px;white-space:nowrap}
 .tbtn:hover{background:var(--ink);color:var(--paper)}
 .book{background:var(--acc);color:#fff;border:0;border-radius:999px;padding:7px 16px;font-size:14px;font-weight:700;text-decoration:none;white-space:nowrap}
+.book:hover{background:#86281a}
 .prog{height:2px;background:var(--rule)}.prog i{display:block;height:2px;background:var(--acc);width:0;transition:width .3s}
 .short{display:none}
-/* pages */
-main{max-width:1240px;margin:0 auto;padding:34px 28px 110px}
+/* ---------- pages ---------- */
+main{max-width:1240px;margin:0 auto;padding:36px 28px 120px}
 .slide{display:none;animation:fade .35s ease}
 .slide.on{display:block}
 @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-.kick{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin:0 0 10px}
-h1{font-size:clamp(38px,6vw,76px);line-height:1.05;margin:0 0 16px;font-weight:900;letter-spacing:-.01em}
-h2{font-size:clamp(30px,4.2vw,52px);line-height:1.12;margin:0 0 14px;font-weight:900}
-h3{font-size:22px;margin:0 0 8px;font-weight:700}
-.deck{font-size:clamp(17px,1.6vw,21px);line-height:1.7;color:var(--soft);max-width:820px;margin:0 0 26px}
+.kick{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin:0 0 12px}
+h1{font-size:clamp(42px,6.4vw,84px);line-height:1.03;margin:0 0 18px;font-weight:900;letter-spacing:-.015em}
+h1 em,h2 em{font-style:italic;color:var(--acc);font-weight:700}
+h2{font-size:clamp(30px,4.3vw,54px);line-height:1.1;margin:0 0 14px;font-weight:900;letter-spacing:-.01em}
+h3{font-size:21px;margin:0 0 8px;font-weight:700;line-height:1.35}
+.deck{font-size:clamp(17px,1.55vw,21px);line-height:1.72;color:var(--soft);max-width:860px;margin:0 0 28px}
 p{line-height:1.85;font-size:17px;margin:0 0 14px}
-.rule{border-top:1px solid var(--ink);margin:26px 0}
-.hair{border-top:1px solid var(--rule)}
+.rule{border-top:1px solid var(--ink);margin:28px 0}
 .cols{display:grid;gap:34px}
-.c2{grid-template-columns:1fr 1fr}.c3{grid-template-columns:repeat(3,1fr)}.c4{grid-template-columns:repeat(4,1fr)}
-.c64{grid-template-columns:1.5fr 1fr}
+.c2{grid-template-columns:1fr 1fr}.c3{grid-template-columns:repeat(3,1fr)}
+.c64{grid-template-columns:1.45fr 1fr}.c46{grid-template-columns:1fr 1.35fr}
 .ruled>*+*{border-left:1px solid var(--rule);padding-left:30px}
-.drop::first-letter{float:left;font-family:var(--disp);font-size:78px;line-height:.82;padding:6px 10px 0 0;color:var(--acc);font-weight:800}
+.drop::first-letter{float:left;font-family:var(--disp);font-size:84px;line-height:.8;padding:7px 12px 0 0;color:var(--acc);font-weight:900}
 .mono{font-family:var(--mono)}
-.small{font-size:13px;color:var(--soft);line-height:1.6}
-.src{font-family:var(--mono);font-size:11.5px;color:var(--soft);line-height:1.6;margin-top:10px}
-.tag{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.06em;border:1px solid var(--ink);padding:2px 8px;border-radius:999px;margin-right:6px}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+q::before,q::after{font-family:"Playfair Display",Georgia,"Times New Roman",serif}
+html:not(.en) .pull,html.en .pull{quotes:none}
+.small{font-size:13.5px;color:var(--soft);line-height:1.65}
+.src{font-family:var(--mono);font-size:11.5px;color:var(--soft);line-height:1.65;margin-top:12px}
+.tag{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.05em;border:1px solid var(--ink);padding:2px 8px;border-radius:999px;margin:0 6px 4px 0;white-space:nowrap;vertical-align:middle}
 .tag.view{border-style:dashed;color:var(--acc);border-color:var(--acc)}
-/* cover */
-.cover{display:grid;grid-template-columns:1.35fr 1fr;gap:48px;align-items:start}
-.cover h1{font-size:clamp(40px,5.6vw,74px)}
-.mx td:first-child{white-space:nowrap}
+.tag.ok{background:var(--ink);color:var(--paper)}
+/* ---------- cover ---------- */
+.cover{display:grid;grid-template-columns:1.4fr 1fr;gap:52px;align-items:start}
 .clines{list-style:none;margin:0;padding:0}
-.clines li{display:grid;grid-template-columns:44px 1fr;padding:14px 0;border-top:1px solid var(--rule);font-size:17px;line-height:1.55}
-.clines li b{font-family:var(--disp);font-style:italic;font-weight:700;color:var(--acc);font-size:22px}
-.codecard{border:1.5px solid var(--ink);padding:22px;background:#fff8ee;margin-top:22px}
-.code{font-family:var(--mono);font-size:44px;font-weight:600;letter-spacing:.08em;color:var(--acc)}
+.clines li{display:grid;grid-template-columns:46px 1fr;padding:13px 0;border-top:1px solid var(--rule);font-size:17px;line-height:1.55}
+.clines li:last-child{border-bottom:1px solid var(--rule)}
+.clines li b{font-family:var(--disp);font-style:italic;font-weight:700;color:var(--acc);font-size:23px;line-height:1.1}
+.clines a{text-decoration:none}.clines a:hover{color:var(--acc)}
+.codecard{border:1.5px solid var(--ink);padding:22px 22px 18px;background:var(--cream)}
+.code{font-family:var(--mono);font-size:46px;font-weight:600;letter-spacing:.08em;color:var(--acc);line-height:1}
 .coderow{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-.btn{border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 16px;font-size:14px;font-weight:700;text-decoration:none;display:inline-block}
+.btn{border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);padding:9px 16px;font-size:14px;font-weight:700;text-decoration:none;display:inline-block;line-height:1.3}
+.btn:hover{background:var(--acc);border-color:var(--acc)}
 .btn.ghost{background:transparent;color:var(--ink)}
-.btn.ok{background:var(--acc);border-color:var(--acc)}
-/* feature box */
-.feature{background:var(--ink);color:var(--paper);padding:30px 32px;margin:28px 0}
-.feature .kick{color:#e8a08f}
-.feature p,.feature .small{color:#d9d3c6}
-.labs{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:18px}
-.labs>div{padding:4px 22px;border-left:1px solid #4a4640}
-.labs>div:first-child{border-left:0;padding-left:0}
-.big{font-family:var(--disp);font-style:italic;font-weight:700;font-size:56px;line-height:1}
-.feature .big{color:#fff}
-.pull{font-family:var(--disp);font-style:italic;font-size:clamp(24px,2.6vw,34px);line-height:1.35;border-top:3px solid var(--acc);border-bottom:1px solid var(--ink);padding:18px 0;margin:26px 0}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+.btn.done{background:var(--acc);border-color:var(--acc);color:#fff}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);margin-top:22px}
+.stats>div{padding:14px 12px 12px;border-left:1px solid var(--rule)}
+.stats>div:first-child{border-left:0;padding-left:0}
+.num{font-family:var(--disp);font-style:italic;font-weight:700;font-size:40px;line-height:1;letter-spacing:-.01em}
+.stats .lab{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--soft);margin-top:6px;line-height:1.45}
+/* ---------- opening ---------- */
+.art h3{display:flex;align-items:baseline;gap:10px}
+.art h3 .rn{font-family:var(--disp);font-style:italic;color:var(--acc);font-size:30px;font-weight:700}
+.art dl{margin:12px 0 0}
+.art dt{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--acc);margin-top:14px}
+.art dd{margin:4px 0 0;font-size:16px;line-height:1.75}
+.art dd.cant{color:var(--soft)}
+.pull{font-family:var(--disp);font-style:italic;font-size:clamp(25px,2.7vw,36px);line-height:1.35;border-top:3px solid var(--acc);border-bottom:1px solid var(--ink);padding:20px 0;margin:30px 0 8px}
 html:not(.en) .pull{font-family:var(--serif);font-style:normal;font-weight:700}
-/* term blocks */
-.term{padding:18px 0;border-top:1px solid var(--ink)}
-.term h3 small{font-family:var(--mono);font-size:12px;color:var(--soft);font-weight:400;margin-left:8px;letter-spacing:.04em}
-.bar{display:flex;gap:3px;margin:12px 0 6px}
-.bar span{flex:1;padding:8px 6px;font-family:var(--mono);font-size:12px;text-align:center;background:var(--card);border-top:3px solid var(--rule)}
-.bar span.hi{border-top-color:var(--acc);background:#f2ddd6}
-.quad{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--ink)}
-.quad div{padding:20px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);min-height:120px}
-.quad div:nth-child(2n){border-right:0}.quad div:nth-child(n+3){border-bottom:0}
-.quad b{font-family:var(--disp);font-size:42px;font-style:italic;color:var(--acc);display:block;line-height:1}
-.quad .mark{background:#f2ddd6}
-/* matrix */
+/* ---------- contributors ---------- */
+.contrib{list-style:none;margin:0;padding:0}
+.contrib li{display:grid;grid-template-columns:64px 1fr;gap:6px;padding:18px 0;border-top:1px solid var(--rule)}
+.contrib li:first-child{border-top:1px solid var(--ink)}
+.contrib .n{font-family:var(--disp);font-style:italic;font-weight:700;font-size:38px;color:var(--acc);line-height:1}
+.contrib h3{margin-bottom:4px}
+.contrib p{font-size:15.5px;line-height:1.75;margin:0}
+.note{background:var(--card);padding:22px 24px;border-top:3px solid var(--ink)}
+.note h3{font-size:19px}
+.note p{font-size:15.5px;line-height:1.75}
+.pct{margin:14px 0 4px}
+.pct .tr{position:relative;height:30px;border-bottom:1px solid var(--ink);background:linear-gradient(90deg,transparent 49.8%,var(--rule) 49.8%,var(--rule) 50.2%,transparent 50.2%)}
+.pct .dot{position:absolute;bottom:-6px;width:12px;height:12px;border-radius:50%;background:var(--acc);transform:translateX(-50%)}
+.pct .dl{position:absolute;bottom:12px;transform:translateX(-50%);font-family:var(--mono);font-size:11px;white-space:nowrap}
+.pct .ax{display:flex;justify-content:space-between;font-family:var(--mono);font-size:10.5px;color:var(--soft);margin-top:6px}
+/* ---------- feature ---------- */
+.feature{background:var(--ink);color:var(--paper);padding:32px 34px 28px;margin:4px 0 28px}
+.feature .kick{color:#ea9f8c}
+.feature h2{color:#fff}
+.feature p,.feature .small,.feature .src{color:#d7d0c2}
+.ftab{width:100%;border-collapse:collapse;margin:18px 0 10px;font-size:15px}
+.ftab th,.ftab td{padding:11px 10px;border-bottom:1px solid #45413a;text-align:left}
+.ftab thead th{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:#bfb7a8;font-weight:500;border-bottom:1px solid #8b8478}
+.ftab td.n{font-family:var(--disp);font-style:italic;font-size:24px;font-weight:700;color:#fff}
+.ftab td.n.dim{color:#8b8478;font-size:18px;font-style:normal;font-family:var(--mono)}
+.ftab tr.std td:first-child::after{content:"★";color:#ea9f8c;margin-left:6px;font-size:13px}
+.finds{display:grid;grid-template-columns:repeat(3,1fr);margin-top:22px}
+.finds>div{padding:4px 22px;border-left:1px solid #4a4640}
+.finds>div:first-child{border-left:0;padding-left:0}
+.finds .num{color:#fff;font-size:44px}
+.finds h3{color:#fff;font-size:18px;margin-top:10px}
+.finds p{font-size:15px;line-height:1.7}
+.corr{list-style:none;margin:0;padding:0;counter-reset:c}
+.corr li{display:grid;grid-template-columns:118px 1fr;gap:16px;padding:14px 0;border-top:1px solid var(--rule);font-size:15.5px;line-height:1.7}
+.corr li:last-child{border-bottom:1px solid var(--rule)}
+.corr .was{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding-top:3px}
+.corr .was b{display:inline-block;padding:2px 8px;border-radius:999px;font-weight:500}
+.corr .ok b{background:var(--ink);color:var(--paper)}
+.corr .fix b{background:var(--acc);color:#fff}
+.corr .upd b{border:1px solid var(--ink)}
+.corr s{color:var(--soft)}
+/* ---------- leaderboard ---------- */
+.ctrl{display:flex;flex-wrap:wrap;gap:18px 26px;align-items:center;padding:14px 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);margin-bottom:6px}
+.seg{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.seg .lbl{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);margin-right:4px}
+.seg button{border:1px solid var(--ink);background:transparent;padding:6px 12px;font-size:14px;border-radius:999px}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.lb{display:grid;grid-template-columns:1.2fr 1fr;gap:34px;align-items:start}
+.rows{list-style:none;margin:0;padding:0}
+.rows li{border-bottom:1px solid var(--rule)}
+.rows button{display:grid;grid-template-columns:78px 1fr auto;gap:14px;align-items:center;width:100%;text-align:left;background:none;border:0;padding:18px 6px 18px 0}
+.rows button:hover .nm{color:var(--acc)}
+.rows li.sel{background:linear-gradient(90deg,var(--accl),transparent 80%)}
+.rows .pos{font-family:var(--disp);font-style:italic;font-weight:700;font-size:54px;line-height:.9;color:var(--acc);padding-left:8px}
+.rows .nm{font-size:21px;font-weight:700;line-height:1.25}
+.rows .sub{font-size:14px;color:var(--soft);margin-top:2px}
+.rows .met{text-align:right;min-width:120px}
+.rows .met b{font-family:var(--mono);font-size:22px;font-weight:600}
+.rows .met small{display:block;font-family:var(--mono);font-size:10.5px;color:var(--soft);letter-spacing:.05em;text-transform:uppercase}
+.mbar{height:4px;background:var(--rule);margin-top:8px;position:relative}
+.mbar i{position:absolute;left:0;top:0;bottom:0;background:var(--ink)}
+.rnote{font-size:14px;color:var(--soft);margin:12px 0 0;min-height:1.5em}
+.card{position:sticky;top:96px;border:1.5px solid var(--ink);background:var(--cream);padding:24px}
+.card h3{font-size:27px;margin:2px 0 4px}
+html.en .card h3{font-family:var(--disp)}
+.card .meta{font-family:var(--mono);font-size:11.5px;color:var(--acc);letter-spacing:.06em;text-transform:uppercase;margin:0 0 10px}
+.card .hl{font-size:16px;line-height:1.7;margin:8px 0 12px}
+.sg{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink);margin:6px 0 4px}
+.sg>div{padding:10px 8px 8px 0;border-bottom:1px solid var(--rule)}
+.sg b{display:block;font-family:var(--mono);font-size:19px;font-weight:600}
+.sg span{font-family:var(--mono);font-size:10.5px;color:var(--soft);letter-spacing:.04em;text-transform:uppercase}
+.sg em{font-style:normal;font-family:var(--mono);font-size:11px;color:var(--acc)}
+.rv{margin:14px 0 0;padding:0;list-style:none}
+.rv li{padding:9px 0;border-top:1px solid var(--rule);font-size:14.5px;line-height:1.65}
+.rv li b{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;display:block;color:var(--soft);font-weight:500}
+.buy{display:flex;align-items:center;gap:10px;flex-wrap:wrap;border-top:1px solid var(--ink);margin-top:14px;padding-top:14px}
+.buy .code{font-size:24px}
+/* ---------- feel map + matrix ---------- */
+.map{position:relative;aspect-ratio:1/1;border:1px solid var(--ink);background:
+ linear-gradient(var(--rule),var(--rule)) 50% 0/1px 100% no-repeat,
+ linear-gradient(90deg,var(--rule),var(--rule)) 0 50%/100% 1px no-repeat,var(--cream);max-width:520px}
+.map .q{position:absolute;font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--soft);padding:10px;line-height:1.4;max-width:46%}
+.map .q1{left:0;top:calc(50% - 32px)}.map .q2{right:0;top:calc(50% - 32px);text-align:right}.map .q3{left:0;bottom:0}.map .q4{right:0;bottom:0;text-align:right}
+.map .pt.r{flex-direction:row;transform:translate(-9px,50%)}
+.map .pt{position:absolute;transform:translate(-50%,50%);display:flex;flex-direction:column;align-items:center;gap:4px}
+.map .pt i{width:18px;height:18px;border-radius:50%;background:var(--acc);border:3px solid var(--paper);box-shadow:0 0 0 1.5px var(--acc)}
+.map .pt span{font-family:var(--disp);font-style:italic;font-weight:700;font-size:16px;background:var(--paper);padding:0 6px;white-space:nowrap}
+.axx,.axy{font-family:var(--mono);font-size:11px;color:var(--soft);letter-spacing:.04em}
+.axx{display:flex;justify-content:space-between;max-width:520px;margin-top:8px}
+.axy{margin-bottom:8px}
+.shapes{display:flex;align-items:flex-end;gap:26px;margin:10px 0 0}
+.shapes figure{margin:0;text-align:center}
+.shapes figcaption{font-family:var(--mono);font-size:11px;color:var(--soft);margin-top:6px;line-height:1.45}
 table.mx{width:100%;border-collapse:collapse;font-size:15px}
-.mx th,.mx td{padding:11px 10px;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}
+.mx th,.mx td{padding:10px 9px;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}
 .mx thead th{border-bottom:2px solid var(--ink);font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;font-weight:600}
-.mx td.n{font-family:var(--mono);font-size:15px}
+.mx td.n{font-family:var(--mono);font-size:14.5px}
+.mx td.n small{color:var(--soft);font-size:11px}
 .mx td.best{color:var(--acc);font-weight:600}
-.mx tr.grp td{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);padding-top:18px;border-bottom:1px solid var(--ink)}
-/* matcher */
-.match{border:1.5px solid var(--ink);padding:24px;background:#fff8ee}
-.q{margin:0 0 16px}.q>div{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
-.q label{border:1px solid var(--ink);padding:7px 12px;font-size:15px;cursor:pointer;background:var(--paper)}
-.q input{position:absolute;opacity:0;pointer-events:none}
-.q input:checked+span{color:var(--acc);font-weight:700}
-.q label:has(input:checked){border-color:var(--acc);background:#f2ddd6}
-.res{border-top:1px solid var(--ink);padding-top:16px;margin-top:6px;min-height:90px}
-.res .big{font-size:40px;color:var(--acc)}
-/* coach */
-.coach{background:var(--ink);color:var(--paper);padding:38px 36px}
-.coach h2{color:#fff}.coach p,.coach li{color:#ddd6c8}
-.coach .kick{color:#e8a08f}
-.price{border:1px solid #6b665d;padding:20px}
-.price .row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #3b3833;font-size:16px}
-.price .row:last-child{border-bottom:0}
-.price .row b{font-family:var(--mono);font-size:20px;color:#fff}
-.coach ul{padding-left:20px;line-height:1.85;margin:0}
-.coach .btn{background:var(--acc);border-color:var(--acc);color:#fff}
-.coach .btn.ghost{background:transparent;border-color:#d9d3c6;color:#fff}
-.disc{font-family:var(--mono);font-size:11.5px;color:#a9a294;line-height:1.6;margin-top:18px;border-top:1px solid #3b3833;padding-top:12px}
-.fix{border:1px dashed var(--acc);padding:16px 18px;background:#fbf3ea}
-.fix li{font-size:14.5px;line-height:1.7;margin-bottom:4px}
-.inline-code{display:flex;align-items:center;gap:12px;flex-wrap:wrap;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:12px 0;margin:20px 0}
+.mx tr.grp td{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--acc);padding-top:20px;border-bottom:1px solid var(--ink)}
+.mxwrap{overflow-x:auto}
+/* ---------- matcher ---------- */
+.match{border:1.5px solid var(--ink);padding:24px;background:var(--cream)}
+.qq{margin:0 0 16px;border:0;padding:0}
+.qq legend{font-weight:700;font-size:16.5px;padding:0;margin-bottom:8px}
+.qq .opts{display:flex;flex-wrap:wrap;gap:8px}
+.qq label{border:1px solid var(--ink);padding:7px 12px;font-size:15px;cursor:pointer;background:var(--paper);position:relative}
+.qq input{position:absolute;opacity:0;pointer-events:none}
+.qq label:has(input:checked){border-color:var(--acc);background:var(--accl);color:var(--acc);font-weight:700}
+.qq label:has(input:focus-visible){outline:2px solid var(--acc);outline-offset:2px}
+.res{border-top:1px solid var(--ink);padding-top:16px;margin-top:6px}
+.res .big{font-family:var(--disp);font-style:italic;font-weight:700;font-size:38px;line-height:1.05;color:var(--acc)}
+html:not(.en) .res .big{font-family:var(--serif);font-style:normal;font-weight:900}
+.res p{font-size:15.5px;line-height:1.72;margin:8px 0 0}
+.res .ver{border-top:1px dashed var(--rule);padding-top:10px;margin-top:12px}
+.notes{list-style:none;margin:0;padding:0}
+.notes li{display:grid;grid-template-columns:44px 1fr;padding:15px 0;border-top:1px solid var(--rule)}
+.notes li:first-child{border-top:1px solid var(--ink)}
+.notes .n{font-family:var(--disp);font-style:italic;font-weight:700;color:var(--acc);font-size:26px;line-height:1}
+.notes h3{font-size:18px;margin-bottom:4px}
+.notes p{font-size:15px;line-height:1.72;margin:0}
+.inline-code{display:flex;align-items:center;gap:12px;flex-wrap:wrap;border:1.5px solid var(--ink);padding:14px 16px;margin-top:18px;background:var(--cream)}
 .inline-code .code{font-size:26px}
-/* footer folio */
-.folio{position:fixed;left:0;right:0;bottom:0;background:var(--paper);border-top:1px solid var(--ink);z-index:20}
-.folio .row{max-width:1240px;margin:0 auto;padding:10px 28px;display:flex;align-items:center;gap:16px}
-.folio .num{font-family:var(--mono);font-size:13px;letter-spacing:.1em}
-.folio .ttl{font-size:14px;color:var(--soft);flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.nav{border:1px solid var(--ink);background:none;padding:6px 14px;font-family:var(--mono);font-size:13px}
-.nav:disabled{opacity:.3;cursor:default}
-/* contents overlay */
-.toc{position:fixed;inset:0;background:rgba(22,21,19,.55);z-index:40;display:none}
-.toc.on{display:block}
-.toc .pane{background:var(--paper);max-width:560px;margin:70px auto;padding:30px 32px;border:1.5px solid var(--ink);max-height:80vh;overflow:auto}
-.toc ol{list-style:none;margin:0;padding:0}
-.toc li button{display:grid;grid-template-columns:48px 1fr;width:100%;text-align:left;background:none;border:0;border-top:1px solid var(--rule);padding:13px 0;font-size:17px}
-.toc li button b{font-family:var(--disp);font-style:italic;color:var(--acc)}
-@media (max-width:860px){
- main{padding:24px 18px 100px}
- .top .row{padding:9px 14px;gap:8px}
- .issue,.long{display:none}.short{display:inline}
- .mast{font-size:19px}
- .cover,.c2,.c3,.c4,.c64,.labs{grid-template-columns:1fr}
- .ruled>*+*{border-left:0;padding-left:0;border-top:1px solid var(--rule);padding-top:18px}
- .labs>div{border-left:0;padding:12px 0;border-top:1px solid #4a4640}
- .labs>div:first-child{border-top:0}
- .feature,.coach{padding:24px 20px}
- .mxwrap{overflow-x:auto}
- .mxwrap table.mx{min-width:560px}
- .folio .row{padding:8px 14px}
- .folio .ttl{display:none}
- .code{font-size:36px}
- .bar span{font-size:10.5px;padding:7px 3px}
+/* ---------- coach's corner ---------- */
+.corner{background:var(--ink);color:var(--paper);padding:34px 34px 28px}
+.corner .kick{color:#ea9f8c}
+.corner h2{color:#fff}
+.corner p{color:#ddd6c8}
+.corner .small,.corner .src{color:#b9b1a2}
+.price{border:1px solid #6b665c;padding:20px 22px;background:#1f1d1a}
+.price table{width:100%;border-collapse:collapse}
+.price td{padding:10px 0;border-bottom:1px solid #3d3a34;font-size:16px;color:#ece6d9}
+.price td:last-child{text-align:right;font-family:var(--disp);font-style:italic;font-weight:700;font-size:28px;color:#fff}
+.drills{list-style:none;margin:0;padding:0}
+.drills li{display:grid;grid-template-columns:40px 1fr;padding:13px 0;border-top:1px solid #3d3a34}
+.drills .n{font-family:var(--disp);font-style:italic;font-weight:700;color:#ea9f8c;font-size:24px;line-height:1}
+.drills b{color:#fff;display:block;margin-bottom:2px}
+.drills span{color:#d2cbbd;font-size:15px;line-height:1.7}
+.facts{list-style:none;margin:0;padding:0}
+.facts li{padding:8px 0;border-top:1px solid #3d3a34;font-size:15px;color:#ddd6c8;line-height:1.6}
+.perk{border:1px dashed #ea9f8c;padding:16px 18px;margin-top:18px}
+.perk .code{color:#ffb3a1;font-size:34px}
+.corner .btn{background:#fff;color:var(--ink);border-color:#fff}
+.corner .btn:hover{background:var(--acc);border-color:var(--acc);color:#fff}
+.corner .btn.ghost{background:transparent;color:#fff;border-color:#8b8478}
+.corner .btn.done{background:var(--acc);border-color:var(--acc);color:#fff}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.sources{margin-top:26px;padding-top:16px;border-top:1px solid var(--ink)}
+.sources ol{margin:8px 0 0;padding-left:20px;columns:2;column-gap:34px}
+.sources li{font-family:var(--mono);font-size:11.5px;line-height:1.6;color:var(--soft);margin-bottom:6px;break-inside:avoid}
+.sources a{color:var(--soft)}
+/* ---------- footer folio + contents ---------- */
+.folio{position:fixed;left:0;right:0;bottom:0;z-index:25;background:var(--paper);border-top:1px solid var(--ink)}
+.folio .row{display:flex;align-items:center;gap:14px;max-width:1240px;margin:0 auto;padding:9px 28px}
+.folio .pg{font-family:var(--mono);font-size:13px;white-space:nowrap}
+.folio .tt{font-size:14px;color:var(--soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1}
+.folio button{border:1px solid var(--ink);background:none;width:40px;height:34px;font-size:18px;line-height:1}
+.folio button:disabled{opacity:.3;cursor:default}
+.folio button:not(:disabled):hover{background:var(--ink);color:var(--paper)}
+.toc{position:fixed;inset:0;z-index:50;background:rgba(22,21,19,.55);display:none;align-items:flex-start;justify-content:flex-end}
+.toc.on{display:flex}
+.toc .panel{background:var(--paper);width:min(440px,92vw);height:100%;overflow:auto;padding:26px 28px;border-left:1px solid var(--ink)}
+.toc ol{list-style:none;margin:16px 0 0;padding:0}
+.toc li button{display:grid;grid-template-columns:44px 1fr;gap:6px;width:100%;text-align:left;background:none;border:0;border-top:1px solid var(--rule);padding:13px 0;font-size:16px;line-height:1.45}
+.toc li button b{font-family:var(--mono);color:var(--acc);font-weight:600}
+.toc li button:hover span{color:var(--acc)}
+.toc li.cur button span{font-weight:700}
+.toc .x{float:right;border:1px solid var(--ink);background:none;width:34px;height:34px;font-size:18px}
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+ .cover,.c2,.c3,.c64,.c46,.lb,.finds{grid-template-columns:1fr}
+ .ruled>*+*{border-left:0;padding-left:0;border-top:1px solid var(--rule);padding-top:22px}
+ .finds>div{border-left:0;padding:16px 0 0;border-top:1px solid #4a4640;margin-top:14px}
+ .finds>div:first-child{border-top:0;margin-top:0;padding-top:0}
+ .card{position:static}
+ .sources ol{columns:1}
 }
+@media (max-width:720px){
+ .top .row{padding:9px 14px;gap:8px}
+ .mast{font-size:19px}
+ .issue{display:none}
+ .long{display:none}.short{display:inline}
+ .book{padding:6px 12px;font-size:13px}
+ main{padding:24px 16px 110px}
+ .folio .row{padding:8px 14px;gap:10px}
+ .folio .tt{font-size:13px}
+ .feature,.corner{padding:24px 18px 22px;margin-left:-4px;margin-right:-4px}
+ .stats .num{font-size:30px}
+ .rows button{grid-template-columns:54px 1fr auto;gap:10px}
+ .rows .pos{font-size:40px;padding-left:4px}
+ .rows .nm{font-size:18px}
+ .rows .met{min-width:92px}
+ .rows .met b{font-size:18px}
+ .corr li{grid-template-columns:1fr;gap:6px}
+ .contrib li{grid-template-columns:48px 1fr}
+ .contrib .n{font-size:30px}
+ .ftab{font-size:13.5px}
+ .ftab td.n{font-size:19px}
+ .ftab th,.ftab td{padding:9px 5px}
+ .shapes{gap:14px}
+ .code{font-size:38px}
+}
+@media print{.top,.folio,.toc{display:none}.slide{display:block!important;page-break-after:always}}
 </style>
 </head>
 <body>
 <header class="top">
  <div class="row">
-  <a class="mast" href="#1">The Paddle <i>Review</i></a>
-  <span class="issue"><span data-l="zh">2026 年 11 月號 · Coral Pro 特輯</span><span data-l="en">November 2026 · Coral Pro Special</span></span>
+  <a class="mast" href="#1" data-go="1">The Paddle <i>Review</i></a>
+  <span class="issue"><span data-l="zh">2026 年 11 月號 · Coral Pro 特輯 · 11/20 修訂</span><span data-l="en">November 2026 · Coral Pro special · Revised Nov 20</span></span>
   <span class="sp"></span>
-  <button class="tbtn" id="langBtn" aria-label="Switch language">EN</button>
-  <button class="tbtn" id="tocBtn"><span class="long"><span data-l="zh">目錄</span><span data-l="en">Contents</span></span><span class="short">≡</span></button>
+  <button class="tbtn" id="langBtn" type="button" aria-label="Switch language / 切換語言">EN</button>
+  <button class="tbtn" id="tocBtn" type="button" aria-label="Contents / 目錄"><span class="long"><span data-l="zh">目錄</span><span data-l="en">Contents</span></span><span class="short">≡</span></button>
   <a class="book" href="https://ninjapb.vercel.app/" target="_blank" rel="noopener"><span class="long"><span data-l="zh">預約教練課</span><span data-l="en">Book a lesson</span></span><span class="short"><span data-l="zh">預約課程</span><span data-l="en">Book</span></span></a>
  </div>
  <div class="prog"><i id="prog"></i></div>
@@ -167,381 +307,626 @@ table.mx{width:100%;border-collapse:collapse;font-size:15px}
 <main id="main">
 
 <!-- ===== 01 COVER ===== -->
-<section class="slide" data-n="1">
+<section class="slide" data-n="1" aria-label="01">
  <div class="cover">
   <div>
-   <p class="kick"><span data-l="zh">封面故事 · 新手忍者的進化之路</span><span data-l="en">Cover story · The beginner's evolution</span></p>
-   <h1><span data-l="zh">不是你天賦不夠，<br>是武器拿錯了。</span><span data-l="en">It's not your talent.<br>It's your weapon.</span></h1>
-   <p class="deck"><span data-l="zh">把艱澀的實驗室數據翻成三個關鍵字——旋轉、揮拍重量、扭轉重量——再用它們拆解本月主角 Six Zero Coral Pro 的三種拍型。每個數字都附上出處。</span><span data-l="en">We translate dense lab data into three words — spin, swing weight, twist weight — and use them to take apart this month's subject, the Six Zero Coral Pro, in all three shapes. Every number is sourced.</span></p>
+   <p class="kick"><span data-l="zh">封面故事 · Six Zero Coral Pro 特輯</span><span data-l="en">Cover story · The Six Zero Coral Pro special</span></p>
+   <h1><span data-l="zh">新手忍者的<br><em>進化</em>之路</span><span data-l="en">The beginner<br>ninja's <em>path</em></span></h1>
+   <p class="deck"><span data-l="zh">球一用力就出界？網前對攻總是慢半拍？這一期把實驗室裡的三個數字——轉速、揮拍重量、扭轉重量——翻成球場上的語言，再用它們拆解 Coral Pro 的三種拍型。每個數字都附出處；查不到的，我們就不寫。</span><span data-l="en">Drives sailing long? Always a beat late at the kitchen? This issue turns three lab numbers — spin, swing weight and twist weight — into court language, then uses them to take apart all three shapes of the Coral Pro. Every number carries a source; if we couldn't find it, it isn't here.</span></p>
    <ol class="clines">
-    <li><b>i</b><span><span data-l="zh">實驗室名詞小抄：一頁看懂 RPM、KewCOR、Swing／Twist Weight</span><span data-l="en">Lab glossary: RPM, KewCOR, swing and twist weight on one page</span></span></li>
-    <li><b>ii</b><span><span data-l="zh">同一支拍，兩個實驗室：2,485 對 2,079 RPM 的真相</span><span data-l="en">One paddle, two labs: why 2,485 and 2,079 RPM are both right</span></span></li>
-    <li><b>iii</b><span><span data-l="zh">寬體、加長、混合：三種拍型怎麼選</span><span data-l="en">Widebody, Elongated, Hybrid: which shape is yours</span></span></li>
-    <li><b>iv</b><span><span data-l="zh">USAP 認證更新：三種拍型都有 USAP 版了，但要買對版本</span><span data-l="en">USAP update: all three shapes now have a USAP version — buy the right one</span></span></li>
-    <li><b>v</b><span><span data-l="zh">教練專欄：小班課程與 NINJA 專屬優惠</span><span data-l="en">Coach's Corner: small-group lessons and the NINJA code</span></span></li>
+    <li><b>i</b><a href="#2" data-go="2"><span data-l="zh">三個痛點，三個數字：轉速、揮重、抗扭各管什麼，又管不了什麼</span><span data-l="en">Three problems, three numbers — what spin, swing weight and twist weight can and can't fix</span></a></li>
+    <li><b>ii</b><a href="#4" data-go="4"><span data-l="zh">同一支拍，四份成績單：2,485 和 2,079 RPM 為什麼都對</span><span data-l="en">One paddle, four report cards: why 2,485 and 2,079 RPM are both right</span></a></li>
+    <li><b>iii</b><a href="#5" data-go="5"><span data-l="zh">排行榜：寬體、混合、加長，誰的手最快、誰最穩</span><span data-l="en">Leaderboard: which shape has the quickest hands, which is steadiest</span></a></li>
+    <li><b>iv</b><a href="#7" data-go="7"><span data-l="zh">買前必看：UPA 版和 UPA &amp; USAP 雙認證版差在哪</span><span data-l="en">Before you buy: the UPA and the UPA &amp; USAP versions</span></a></li>
+    <li><b>v</b><a href="#8" data-go="8"><span data-l="zh">教練專欄：上課可免費試打 Coral Pro 全系列</span><span data-l="en">Coach's Corner: try every Coral Pro shape in class</span></a></li>
    </ol>
   </div>
   <aside>
    <div class="codecard">
-    <p class="kick" style="margin-bottom:4px"><span data-l="zh">Six Zero 官網專屬折扣碼</span><span data-l="en">Six Zero official store code</span></p>
-    <div class="coderow"><span class="code">NINJA</span><button class="btn copy" data-code="NINJA"><span data-l="zh">複製折扣碼</span><span data-l="en">Copy code</span></button></div>
-    <p style="margin:12px 0 14px"><span data-l="zh">結帳輸入 <b>NINJA</b> 享 <b>9 折</b>。下方連結會記錄推薦，但不會自動套用折扣碼，請記得貼上。</span><span data-l="en">Enter <b>NINJA</b> at checkout for <b>10% off</b>. The link below tracks the referral but does not apply the code — paste it yourself.</span></p>
+    <p class="kick" style="margin-bottom:8px"><span data-l="zh">Six Zero 官網專屬折扣碼</span><span data-l="en">Six Zero official store code</span></p>
+    <div class="coderow"><span class="code">NINJA</span><button class="btn copy" type="button" data-code="NINJA"><span data-l="zh">複製折扣碼</span><span data-l="en">Copy code</span></button></div>
+    <p style="margin:14px 0;font-size:16px"><span data-l="zh">結帳時輸入 <b>NINJA</b> 享 <b>9 折</b>。下方推薦連結只會記錄推薦，<b>不會自動套用折扣碼</b>，請記得貼上。</span><span data-l="en">Enter <b>NINJA</b> at checkout for <b>10% off</b>. The referral link below tracks the referral but <b>does not apply the code</b> — paste it yourself.</span></p>
     <a class="btn ghost" href="https://www.sixzeropickleball.com/NINJA" target="_blank" rel="noopener"><span data-l="zh">前往 Six Zero 官網 →</span><span data-l="en">Go to Six Zero →</span></a>
-    <p class="src"><span data-l="zh">揭露：Coach Ninja 為 Six Zero 官方品牌推廣大使。</span><span data-l="en">Disclosure: Coach Ninja is an official Six Zero brand ambassador.</span></p>
+    <p class="src"><span data-l="zh">揭露：Coach Ninja 為 Six Zero 官方品牌推廣大使，透過折扣碼或推薦連結購買，教練可能獲得回饋。</span><span data-l="en">Disclosure: Coach Ninja is an official Six Zero brand ambassador and may earn a commission on purchases made with the code or referral link.</span></p>
    </div>
-   <div class="pull" style="margin-top:26px"><span data-l="zh">「學會看懂三個關鍵字，你就能找到屬於你的完美武器。」</span><span data-l="en">“Learn to read three numbers and you'll find the weapon that fits you.”</span></div>
+   <div class="stats">
+    <div><div class="num">108.75</div><div class="lab"><span data-l="zh">寬體揮拍重量<br>三型最低</span><span data-l="en">Widebody swing<br>weight · lowest</span></div></div>
+    <div><div class="num">7.25</div><div class="lab"><span data-l="zh">寬體扭轉重量<br>三型最高</span><span data-l="en">Widebody twist<br>weight · highest</span></div></div>
+    <div><div class="num">4</div><div class="lab"><span data-l="zh">三型轉速差<br>（RPM）</span><span data-l="en">Spin spread<br>across shapes (RPM)</span></div></div>
+   </div>
+   <p class="src"><span data-l="zh">數字：Matt's Pickleball 實測（Coral Pro 三拍型，2026/11 更新）。</span><span data-l="en">Figures: Matt's Pickleball measurements (all three Coral Pro shapes, updated Nov 2026).</span></p>
   </aside>
  </div>
 </section>
 
-<!-- ===== 02 THREE SECRETS ===== -->
-<section class="slide" data-n="2">
- <p class="kick"><span data-l="zh">開篇 · 忍術三大奧義</span><span data-l="en">Opening · The three secrets</span></p>
- <h2><span data-l="zh">三個數字，決定你在場上的樣子</span><span data-l="en">Three numbers decide how you play</span></h2>
- <p class="deck"><span data-l="zh">磅秤上的重量幾乎說明不了什麼。真正決定手感的，是球拍動起來之後的表現。</span><span data-l="en">The number on a scale tells you almost nothing. What matters is how the paddle behaves once it moves.</span></p>
- <div class="cols c3 ruled">
+<!-- ===== 02 OPENING ===== -->
+<section class="slide" data-n="2" aria-label="02">
+ <p class="kick"><span data-l="zh">開篇 · 忍術三大奧義</span><span data-l="en">Opening · The three secret arts</span></p>
+ <h2><span data-l="zh">先別怪天分，<br>先看懂你手上的拍子</span><span data-l="en">Before you blame talent,<br>read your <em>paddle</em></span></h2>
+ <div class="cols c64" style="margin-top:8px">
   <div>
-   <p class="kick">I · Spin</p>
-   <h3><span data-l="zh">下墜魔球</span><span data-l="en">The dipping ball</span></h3>
-   <p class="drop"><span data-l="zh">轉速是球拍表面摩擦帶動球旋轉的次數。轉速越高，上旋球越早往下掉——你可以放心用力揮，球還是會落在界內。</span><span data-l="en">Spin is how fast the face makes the ball rotate. More topspin makes the ball dip sooner, so you can swing harder and still land it in.</span></p>
+   <p class="drop"><span data-l="zh">新手最常卡在兩個地方：底線抽球越用力越出界，網前對攻時拍子像綁了鉛塊，怎麼樣都慢半拍。這兩件事，技術占了大半；但球拍確實會放大，或縮小你的弱點。實驗室用三個數字來描述這件事：轉速（Spin）、揮拍重量（Swing Weight）與扭轉重量（Twist Weight）。看懂它們，你就知道一支拍子能幫你什麼，又幫不了什麼。</span><span data-l="en">Beginners get stuck in two places. The harder they drive, the further the ball sails long; and in kitchen-line exchanges the paddle feels chained to an anvil, always a beat late. Technique is most of the fix — but a paddle can magnify or shrink a weakness. Labs describe that with three numbers: spin, swing weight and twist weight. Learn to read them and you'll know what a paddle can do for you, and what it can't.</span></p>
   </div>
   <div>
-   <p class="kick">II · Swing weight</p>
-   <h3><span data-l="zh">神速拔刀</span><span data-l="en">The quick draw</span></h3>
-   <p><span data-l="zh">揮拍重量是揮動時感受到的「重」，不等於秤上的重量。數值越低，網前（Kitchen line）快攻時拍子越快到位；越高，擊球越有份量，但反應會慢一拍。</span><span data-l="en">Swing weight is how heavy the paddle feels in motion, not on a scale. Lower means faster hands in kitchen-line exchanges; higher means more plow-through but a slower reaction.</span></p>
-  </div>
-  <div>
-   <p class="kick">III · Twist weight</p>
-   <h3><span data-l="zh">絕對防禦盾</span><span data-l="en">The shield</span></h3>
-   <p><span data-l="zh">扭轉重量是沒打中甜區時，球拍抵抗翻轉的能力。數值越高，容錯率與甜區感越大，打到拍框附近也比較不會在手中翻轉。</span><span data-l="en">Twist weight is how well the paddle resists rotating on off-center hits. Higher means a more forgiving, larger-feeling sweet spot.</span></p>
+   <div class="pull"><span data-l="zh">「球拍不會替你練球；但選錯拍，會讓你的弱點更明顯。」</span><span data-l="en">“A paddle won't practise for you. The wrong one just makes your weak spots louder.”</span></div>
+   <span class="tag view"><span data-l="zh">本刊觀點</span><span data-l="en">Our view</span></span>
   </div>
  </div>
- <div class="feature">
-  <p class="kick"><span data-l="zh">深度 · 同一支拍，兩個實驗室</span><span data-l="en">Deep dive · One paddle, two labs</span></p>
-  <h3 style="color:#fff;font-size:26px"><span data-l="zh">Coral Pro Widebody 到底轉多快？</span><span data-l="en">How much does the Coral Pro Widebody really spin?</span></h3>
-  <div class="labs">
-   <div><div class="big">2,485</div><p class="small" style="margin-top:8px"><span data-l="zh">Matt's Pickleball · RPM · 高速攝影機（500+ fps），在他測過的球拍中排第 100 百分位</span><span data-l="en">Matt's Pickleball · RPM · high-speed camera (500+ fps); 100th percentile in his database</span></p></div>
-   <div><div class="big">2,079</div><p class="small" style="margin-top:8px"><span data-l="zh">Pickleball Effect · RPM · 該站評為「Very high」</span><span data-l="en">Pickleball Effect · RPM · rated “very high” on that site's scale</span></p></div>
-   <div><div class="big">+0.7%</div><p class="small" style="margin-top:8px"><span data-l="zh">John Kew · 同一點撞擊 100 次後轉速不降反升，評為 Tier 1 耐用度</span><span data-l="en">John Kew · spin rose slightly after 100 impacts in one spot; Tier 1 durability</span></p></div>
-  </div>
-  <p style="margin-top:20px"><span data-l="zh">數字差 400 RPM，不代表誰錯了：每個實驗室的量測工具和刻度不同，只能拿「同一個實驗室」的數字互相比較。本刊以下的拍型比較一律採用 Matt's Pickleball 的數據。</span><span data-l="en">A 400 RPM gap doesn't mean one lab is wrong: each uses different tools and scales, so only compare numbers from the same lab. Our shape comparison below uses Matt's Pickleball throughout.</span></p>
-  <p class="src" style="color:#a9a294"><span data-l="zh">數據來源：mattspickleball.com（Coral Pro Widebody 16mm）、pickleballeffect.com（Coral Pro Widebody）、johnkewpickleball.com（Six Zero Coral Pro Review）</span><span data-l="en">Sources: mattspickleball.com (Coral Pro Widebody 16mm), pickleballeffect.com (Coral Pro Widebody), johnkewpickleball.com (Six Zero Coral Pro Review)</span></p>
+ <div class="cols c3 ruled art" style="margin-top:30px">
+  <article>
+   <h3><span class="rn">I</span><span><span data-l="zh">轉速 · 下墜魔球</span><span data-l="en">Spin · the dipping ball</span></span></h3>
+   <dl>
+    <dt><span data-l="zh">是什麼</span><span data-l="en">What it is</span></dt>
+    <dd><span data-l="zh">RPM，球每分鐘轉幾圈。</span><span data-l="en">RPM — how many times the ball turns per minute.</span></dd>
+    <dt><span data-l="zh">為什麼重要</span><span data-l="en">Why it matters</span></dt>
+    <dd><span data-l="zh">上旋會讓球往下彎（馬格努斯效應）。同樣的出手速度，上旋越強，球越早落地——這就是「用力抽也不出界」的原理。</span><span data-l="en">Topspin bends the ball downward (the Magnus effect). At the same pace, more topspin brings the ball down sooner — which is how a hard drive still lands in.</span></dd>
+    <dt><span data-l="zh">它做不到的事</span><span data-l="en">What it can't do</span></dt>
+    <dd class="cant"><span data-l="zh">拍面只是幫手。轉速主要來自你由下往上「刷」的揮拍路徑；把球平平推出去，再粗的拍面也轉不起來。</span><span data-l="en">The face only helps. Most spin comes from a low-to-high brushing swing; push the ball flat and no amount of grit will spin it.</span></dd>
+   </dl>
+  </article>
+  <article>
+   <h3><span class="rn">II</span><span><span data-l="zh">揮拍重量 · 神速拔刀</span><span data-l="en">Swing weight · the quick draw</span></span></h3>
+   <dl>
+    <dt><span data-l="zh">是什麼</span><span data-l="en">What it is</span></dt>
+    <dd><span data-l="zh">揮動時感受到的「重」，也就是繞握把轉動的慣量，不等於秤上的重量。</span><span data-l="en">How heavy the paddle feels in motion — its rotational inertia around the handle — not what it weighs on a scale.</span></dd>
+    <dt><span data-l="zh">為什麼重要</span><span data-l="en">Why it matters</span></dt>
+    <dd><span data-l="zh">數值越低，網前（Kitchen line）快攻時拍子越快到位。</span><span data-l="en">The lower it is, the faster the paddle gets into place when a speed-up comes at the kitchen line.</span></dd>
+    <dt><span data-l="zh">代價</span><span data-l="en">The trade-off</span></dt>
+    <dd class="cant"><span data-l="zh">揮重低的拍子，擋重球時比較不紮實，抽球也少一點「推送感」。快和沉，很難兩者兼得。</span><span data-l="en">A low swing weight feels less solid blocking heavy balls and gives drives less plow-through. Quick and heavy rarely come together.</span></dd>
+   </dl>
+  </article>
+  <article>
+   <h3><span class="rn">III</span><span><span data-l="zh">扭轉重量 · 絕對防禦盾</span><span data-l="en">Twist weight · the shield</span></span></h3>
+   <dl>
+    <dt><span data-l="zh">是什麼</span><span data-l="en">What it is</span></dt>
+    <dd><span data-l="zh">球沒打在甜區時，拍子抵抗在手中翻轉的能力。</span><span data-l="en">How well the paddle resists twisting in your hand when you miss the sweet spot.</span></dd>
+    <dt><span data-l="zh">為什麼重要</span><span data-l="en">Why it matters</span></dt>
+    <dd><span data-l="zh">數值越高越寬容，有效甜區越大：偏一點的球，拍面不容易歪，球還是能穩穩過網。</span><span data-l="en">Higher means more forgiving and a bigger effective sweet spot: on slightly off-centre hits the face holds its angle and the ball still clears the net.</span></dd>
+    <dt><span data-l="zh">它做不到的事</span><span data-l="en">What it can't do</span></dt>
+    <dd class="cant"><span data-l="zh">真的打到拍框，任何拍子都救不了。抗扭幫的是「偏一點」，不是「沒打到」。</span><span data-l="en">Hit the frame and no paddle will save you. Twist weight helps with a near miss, not a miss.</span></dd>
+   </dl>
+  </article>
  </div>
 </section>
 
-<!-- ===== 03 GLOSSARY SPIN ===== -->
-<section class="slide" data-n="3">
- <p class="kick"><span data-l="zh">實驗室名詞小抄 ① · 旋轉與火力</span><span data-l="en">Lab glossary ① · Spin and firepower</span></p>
- <h2><span data-l="zh">球會轉多少、飛多快</span><span data-l="en">How much it spins, how fast it flies</span></h2>
- <p class="deck"><span data-l="zh">以下定義與區間出自 John Kew Paddle Database。注意：這些分級只適用於 John Kew 自己的量測，不能拿其他實驗室的數字直接套用。</span><span data-l="en">Definitions and bands below come from the John Kew Paddle Database. They apply to John Kew's own measurements only — don't map other labs' numbers onto them.</span></p>
- <div class="term">
-  <h3><span data-l="zh">旋轉</span><span data-l="en">Spin</span><small>SPIN RPM</small></h3>
-  <p><span data-l="zh">球每分鐘轉幾圈。John Kew 用 Stalker Pro 3s 雷達槍量測真人實際揮拍打出的轉速。</span><span data-l="en">Ball revolutions per minute. John Kew measures it with a Stalker Pro 3s radar gun off a real human swing.</span></p>
-  <div class="bar"><span>Poor &lt; 1,900</span><span>Fair 1,900–2,100</span><span>Good 2,100–2,300</span><span class="hi">Elite &gt; 2,300</span></div>
-  <p class="small"><span data-l="zh">「Elite Spin」指的就是最高這一級。</span><span data-l="en">“Elite spin” refers to the top band.</span></p>
- </div>
- <div class="cols c3 ruled">
-  <div class="term" style="border-top:1px solid var(--ink)"><h3><span data-l="zh">力量</span><span data-l="en">Power</span><small>FULL SWING</small></h3><p><span data-l="zh">全力揮拍（底線抽球、發球）時的出球速度。數值越高，大力球越有威脅。</span><span data-l="en">Ball speed off a full swing — drives and serves. Higher means more threatening big shots.</span></p></div>
-  <div class="term" style="border-top:1px solid var(--ink)"><h3><span data-l="zh">彈跳</span><span data-l="en">Pop</span><small>SHORT PUNCH</small></h3><p><span data-l="zh">短促、小動作擊球（例如網前推擋截擊）時的出球速度。數值高，網前快攻不用大動作也有速度。</span><span data-l="en">Ball speed off a short, punchy stroke such as a punch volley. High pop means pace at the net without a big swing.</span></p></div>
-  <div class="term" style="border-top:1px solid var(--ink)"><h3><span data-l="zh">火力</span><span data-l="en">Firepower</span><small>POWER + POP</small></h3><p><span data-l="zh">把 Power 與 Pop 換算成 z 分數後合併。沒有單位，代表這支拍在整個資料庫裡的相對火力位置。</span><span data-l="en">Power and pop combined as z-scores. Unitless: it shows where a paddle sits relative to the whole database.</span></p></div>
- </div>
- <p class="src"><span data-l="zh">定義來源：John Kew Pickleball Paddle Database（johnkewpickleball.com/paddle-database）</span><span data-l="en">Definitions: John Kew Pickleball Paddle Database (johnkewpickleball.com/paddle-database)</span></p>
-</section>
-
-<!-- ===== 04 GLOSSARY FEEL ===== -->
-<section class="slide" data-n="4">
- <p class="kick"><span data-l="zh">實驗室名詞小抄 ② · 手感與操控</span><span data-l="en">Lab glossary ② · Feel and handling</span></p>
- <h2><span data-l="zh">重量不只看磅秤</span><span data-l="en">Weight isn't just the scale</span></h2>
+<!-- ===== 03 READING THE LAB ===== -->
+<section class="slide" data-n="3" aria-label="03">
+ <p class="kick"><span data-l="zh">讀懂實驗室 · 本期資料來源</span><span data-l="en">Reading the lab · Our sources</span></p>
+ <h2><span data-l="zh">四個來源，<br>四把不同的尺</span><span data-l="en">Four sources,<br>four different <em>rulers</em></span></h2>
+ <p class="deck"><span data-l="zh">每個實驗室的儀器和測法都不同，數字只能和「同一個來源」互相比較。本刊以 Matt's Pickleball 為主要標準（三種拍型的資料最完整，2026 年 11 月仍在更新），其餘來源用來交叉驗證。</span><span data-l="en">Every lab uses different instruments and methods, so numbers only compare within the same source. We use Matt's Pickleball as our standard — it has the fullest data on all three shapes and was still being updated in November 2026 — and use the others to cross-check.</span></p>
  <div class="cols c64">
+  <ol class="contrib">
+   <li><span class="n">01</span><div><h3>Matt's Pickleball <span class="tag ok"><span data-l="zh">本刊標準</span><span data-l="en">Our standard</span></span></h3><p><span data-l="zh">揮重用 Briffidi SW1、抗扭用 Briffidi TWA2 量測；轉速以每秒 500 格以上的高速攝影機判讀；另用測速槍測發球與推擋截擊球速，並量拍面粗糙度。每個數字都附上在他資料庫中的百分位。</span><span data-l="en">Swing weight on a Briffidi SW1, twist weight on a Briffidi TWA2, spin read from a high-speed camera at over 500 frames per second, plus radar-gun serve and punch-volley speeds and face roughness. Every figure comes with its percentile in his database.</span></p></div></li>
+   <li><span class="n">02</span><div><h3>John Kew <span class="tag"><span data-l="zh">原簡報來源</span><span data-l="en">The deck's source</span></span></h3><p><span data-l="zh">轉速用 Stalker Pro 3s 雷達槍量真人揮拍，超過 2,300 RPM 列為 Elite；KewCOR 用砲彈機以 50 MPH 打 LT 球量拍面回彈（高於 0.39 屬力量型）；另做 100 次高速撞擊後的轉速耐用度測試。</span><span data-l="en">Spin from a Stalker Pro 3s radar gun off a real human swing — above 2,300 RPM is Elite. KewCOR fires an LT ball at 50 MPH to map rebound (above 0.39 is the Power band). He also retests spin after 100 high-speed impacts for durability.</span></p></div></li>
+   <li><span class="n">03</span><div><h3>Pickleball Effect</h3><p><span data-l="zh">Braydon 的球拍資料庫。轉速數字普遍比 Matt 低約 400 RPM（測法不同），另外追蹤拍面粗糙度在磨耗後保留多少。</span><span data-l="en">Braydon's paddle database. Its spin numbers read roughly 400 RPM below Matt's (a different method), and it tracks how much face roughness survives wear.</span></p></div></li>
+   <li><span class="n">04</span><div><h3><span data-l="zh">Six Zero 原廠規格</span><span data-l="en">Six Zero factory specs</span></h3><p><span data-l="zh">官網標示的揮重、抗扭與尺寸。這是品牌自己的數字，不是第三方實測，所以只拿來對照。</span><span data-l="en">The swing weight, twist weight and dimensions on the brand's store. They're the maker's own figures, not independent tests, so we use them for reference only.</span></p></div></li>
+  </ol>
   <div>
-   <div class="term">
-    <h3><span data-l="zh">揮拍重量</span><span data-l="en">Swing weight</span><small>DYNAMIC</small></h3>
-    <p><span data-l="zh">揮拍時感受到的轉動慣量，以動態方式量測，不是秤上的重量。John Kew 的參考區間：</span><span data-l="en">Rotational inertia through a swing, measured dynamically rather than on a scale. John Kew's rough bands:</span></p>
-    <div class="bar"><span><span data-l="zh">低 &lt; 113</span><span data-l="en">Low &lt; 113</span></span><span><span data-l="zh">中 113–120</span><span data-l="en">Mid 113–120</span></span><span><span data-l="zh">高 121+</span><span data-l="en">High 121+</span></span></div>
-    <p class="small"><span class="tag view"><span data-l="zh">本刊觀點</span><span data-l="en">Our view</span></span><span data-l="zh">越低網前反應越快；越高擊球越紮實。</span><span data-l="en">Lower = quicker at the net; higher = more solid contact.</span></p>
+   <div class="note">
+    <h3><span data-l="zh">實驗室 RPM ≠ 比賽認證的 RPM</span><span data-l="en">Lab RPM is not certification RPM</span></h3>
+    <p><span data-l="zh">USA Pickleball 自 2026 年 10 月 1 日起，對新送審的球拍設下 2,100 RPM 的轉速上限；職業端的 UPA-A 從 2024 年就用同樣的上限。Coral Pro 是通過 UPA-A 認證的球拍，Matt 卻量到 2,485 RPM——因為認證機構用的是自己的發球機與測法。所以，別拿評測網站的 RPM 判斷一支拍子合不合法，要查官方名單。</span><span data-l="en">Since 1 October 2026, USA Pickleball has capped newly submitted paddles at 2,100 RPM; the pro-side UPA-A has used the same cap since 2024. The Coral Pro is UPA-A approved, yet Matt measured 2,485 RPM — because certifiers use their own cannon and protocol. So don't judge legality from a review site's RPM; check the official list.</span></p>
+    <p class="src"><span data-l="zh">來源：The Dink（USAP 轉速測試上路報導）、Pickleball Effect（USAP 新制說明）、USA Pickleball 核可名單。</span><span data-l="en">Sources: The Dink (USAP spin-test launch), Pickleball Effect (USAP rule explainer), USA Pickleball approved list.</span></p>
    </div>
-   <div class="term">
-    <h3><span data-l="zh">扭轉重量</span><span data-l="en">Twist weight</span><small>STABILITY</small></h3>
-    <p><span data-l="zh">打偏時球拍抵抗扭轉的穩定度。資料庫範圍約 5.0–8.0，數字越高越穩、容錯越大。</span><span data-l="en">Stability against off-center hits. The database spans about 5.0–8.0; higher is more stable and forgiving.</span></p>
-   </div>
-   <div class="cols c2" style="gap:24px">
-    <div class="term"><h3><span data-l="zh">平衡點</span><span data-l="en">Balance point</span></h3><p><span data-l="zh">重量集中在握把到拍面之間的哪個位置。</span><span data-l="en">Where the mass sits along the handle-to-face axis.</span></p></div>
-    <div class="term"><h3><span data-l="zh">靜態重量</span><span data-l="en">Static weight</span></h3><p><span data-l="zh">放在秤上量到的重量。</span><span data-l="en">What the paddle reads on a scale.</span></p></div>
-   </div>
-  </div>
-  <div>
-   <h3 style="margin-top:18px"><span data-l="zh">手感象限</span><span data-l="en">Feel quadrant</span></h3>
-   <div class="quad">
-    <div><b>A</b><span data-l="zh">硬＋紮實</span><span data-l="en">Stiff + dense</span></div>
-    <div><b>B</b><span data-l="zh">硬＋空心</span><span data-l="en">Stiff + hollow</span></div>
-    <div class="mark"><b>C</b><span data-l="zh">軟＋紮實</span><span data-l="en">Soft + dense</span><p class="small" style="margin:8px 0 0"><span data-l="zh">Pickleball Effect 將 Coral Pro 三種拍型都標為 Soft/Dense</span><span data-l="en">Pickleball Effect lists all three Coral Pro shapes as Soft/Dense</span></p></div>
-    <div><b>D</b><span data-l="zh">軟＋空心</span><span data-l="en">Soft + hollow</span></div>
-   </div>
-  </div>
- </div>
- <p class="src"><span data-l="zh">定義來源：John Kew Paddle Database；Coral Pro 手感標註：pickleballeffect.com</span><span data-l="en">Definitions: John Kew Paddle Database; Coral Pro feel label: pickleballeffect.com</span></p>
-</section>
-
-<!-- ===== 05 GLOSSARY COR & DURABILITY ===== -->
-<section class="slide" data-n="5">
- <p class="kick"><span data-l="zh">實驗室名詞小抄 ③ · 彈性與耐用度</span><span data-l="en">Lab glossary ③ · Rebound and durability</span></p>
- <h2><span data-l="zh">球拍有多「彈」、能用多久</span><span data-l="en">How lively it is, how long it lasts</span></h2>
- <div class="cols c2 ruled">
-  <div>
-   <div class="term">
-    <h3>KewCOR<small>COEFFICIENT OF RESTITUTION</small></h3>
-    <p><span data-l="zh">恢復係數：球打到拍面後，球拍把多少能量還給球。John Kew 用 LT 球以 50 MPH 打向拍面，在整個拍面多點量測。數字越高越彈、出球越快。</span><span data-l="en">How much energy the paddle returns to the ball. John Kew fires an LT ball at 50 MPH and maps it across the face. Higher means livelier and faster.</span></p>
-    <div class="bar"><span><span data-l="zh">控制型 &lt; 0.366</span><span data-l="en">Control &lt; 0.366</span></span><span><span data-l="zh">全場型 0.366–0.39</span><span data-l="en">All-court 0.366–0.39</span></span><span class="hi"><span data-l="zh">力量型 &gt; 0.39</span><span data-l="en">Power &gt; 0.39</span></span></div>
-   </div>
-   <div class="fix" style="margin-top:14px">
-    <p class="kick" style="margin-bottom:6px"><span data-l="zh">本刊發現</span><span data-l="en">Our finding</span></p>
-    <p style="margin:0;font-size:15.5px"><span data-l="zh">John Kew 量到 Coral Pro 的 KewCOR 為 0.410（加長型）與 0.413（混合型、寬體），依他自己的分類屬於「力量型」區間。很多店家把它定位成全場型拍，買前值得留意。</span><span data-l="en">John Kew measured the Coral Pro's KewCOR at 0.410 (Elongated) and 0.413 (Hybrid, Widebody) — in his own “Power” band. Many shops market it as an all-court paddle, so it's worth knowing.</span></p>
-   </div>
-  </div>
-  <div>
-   <div class="term">
-    <h3><span data-l="zh">砲彈機旋轉保持率</span><span data-l="en">Cannon spin retention</span></h3>
-    <p><span data-l="zh">發球機以 60 MPH 射出 LT Pro 48 球並以高速攝影測轉速；球拍再承受 100 次 70 MPH 撞擊後重測。</span><span data-l="en">A cannon fires LT Pro 48 balls at 60 MPH and a high-speed camera reads spin; the paddle then takes 100 impacts at 70 MPH and is retested.</span></p>
-    <div class="bar"><span>Gain ↑</span><span class="hi">Holds &lt; 12%</span><span>Moderate 12–20%</span><span>Heavy ≥ 20%</span></div>
-    <p class="small"><span data-l="zh">John Kew 的 FAQ 另把「旋轉流失 0–5%」稱為 Tier 1，比 Holds 更嚴格。Coral Pro 的結果是轉速約 +0.7%（無可量測流失），屬 Tier 1。</span><span data-l="en">John Kew's FAQ separately calls 0–5% loss “Tier 1”, stricter than Holds. The Coral Pro gained about 0.7% (no measurable loss): Tier 1.</span></p>
-   </div>
-   <div class="cols c2" style="gap:22px">
-    <div class="term"><h3><span data-l="zh">核心厚度</span><span data-l="en">Core thickness</span></h3><p class="small"><span data-l="zh">13 / 14 / 16 mm。越厚通常越軟、越好控；越薄越硬、越快。</span><span data-l="en">13 / 14 / 16 mm. Thicker generally plays softer and more controlled; thinner firmer and faster.</span></p></div>
-    <div class="term"><h3><span data-l="zh">握把長度</span><span data-l="en">Handle length</span></h3><p class="small"><span data-l="zh">短 &lt; 5.2″ · 中 5.2–5.4″ · 長 &gt; 5.4″</span><span data-l="en">Short &lt; 5.2″ · Medium 5.2–5.4″ · Long &gt; 5.4″</span></p></div>
-    <div class="term"><h3><span data-l="zh">拍型</span><span data-l="en">Shape</span></h3><p class="small"><span data-l="zh">寬體 Widebody · 長型 Elongated · 混合 Hybrid</span><span data-l="en">Widebody · Elongated · Hybrid</span></p></div>
-    <div class="term"><h3><span data-l="zh">比賽認證</span><span data-l="en">Certification</span></h3><p class="small"><span data-l="zh">USAP、UPA-A 或兩者皆有。兩個組織測試標準不同，參賽前先確認。</span><span data-l="en">USAP, UPA-A or both. The two bodies test differently — check before you enter an event.</span></p></div>
-   </div>
-  </div>
- </div>
- <p class="src"><span data-l="zh">來源：John Kew Paddle Database 與 Six Zero Coral Pro Review（johnkewpickleball.com）</span><span data-l="en">Sources: John Kew Paddle Database and Six Zero Coral Pro Review (johnkewpickleball.com)</span></p>
-</section>
-
-<!-- ===== 06 CHOOSE YOUR WEAPON ===== -->
-<section class="slide" data-n="6">
- <p class="kick"><span data-l="zh">選刀指南 · Choose your weapon</span><span data-l="en">Buyer's guide · Choose your weapon</span></p>
- <h2><span data-l="zh">同一支 Coral Pro，三種性格</span><span data-l="en">One Coral Pro, three personalities</span></h2>
- <p class="deck"><span data-l="zh">三種拍型的轉速幾乎一樣（差距只有 4 RPM），真正的差別在揮拍重量、扭轉重量與握把長度。</span><span data-l="en">Spin is essentially identical across shapes (a 4 RPM spread). The real differences are swing weight, twist weight and handle length.</span></p>
- <div class="mxwrap">
- <table class="mx">
-  <thead><tr><th></th><th><span data-l="zh">寬體 Widebody</span><span data-l="en">Widebody</span></th><th><span data-l="zh">加長 Elongated</span><span data-l="en">Elongated</span></th><th><span data-l="zh">混合 Hybrid</span><span data-l="en">Hybrid</span></th></tr></thead>
-  <tbody>
-   <tr><td><span data-l="zh">風格</span><span data-l="en">Style</span></td><td><span data-l="zh">網前防禦大師</span><span data-l="en">Net defender</span></td><td><span data-l="zh">單打重砲刺客</span><span data-l="en">Power assassin</span></td><td><span data-l="zh">全能型宗師</span><span data-l="en">Balanced grandmaster</span></td></tr>
-   <tr class="grp"><td colspan="4"><span data-l="zh">實測 · Matt's Pickleball</span><span data-l="en">Measured · Matt's Pickleball</span></td></tr>
-   <tr><td><span data-l="zh">揮拍重量</span><span data-l="en">Swing weight</span></td><td class="n best">108.75</td><td class="n">114.3</td><td class="n">111.65</td></tr>
-   <tr><td><span data-l="zh">扭轉重量</span><span data-l="en">Twist weight</span></td><td class="n best">7.25</td><td class="n">6.0</td><td class="n">6.65</td></tr>
-   <tr><td><span data-l="zh">轉速 RPM</span><span data-l="en">Spin RPM</span></td><td class="n">2,485</td><td class="n">2,483</td><td class="n">2,481</td></tr>
-   <tr><td><span data-l="zh">靜態重量</span><span data-l="en">Static weight</span></td><td class="n">8.22 oz</td><td class="n">8.01 oz</td><td class="n">8.11 oz</td></tr>
-   <tr class="grp"><td colspan="4"><span data-l="zh">原廠規格 · Six Zero</span><span data-l="en">Factory spec · Six Zero</span></td></tr>
-   <tr><td><span data-l="zh">揮拍／扭轉（原廠）</span><span data-l="en">Swing / twist (factory)</span></td><td class="n">110 / 7.1</td><td class="n">117 / 5.9</td><td class="n">114 / 6.70</td></tr>
-   <tr><td><span data-l="zh">握把長度</span><span data-l="en">Handle</span></td><td class="n">5.5″</td><td class="n">5.75″</td><td class="n">5.5″</td></tr>
-   <tr><td><span data-l="zh">拍長 × 拍寬</span><span data-l="en">Length × width</span></td><td class="n">15.8″ × 8.0–8.1″</td><td class="n">16.5″ × 7.3–7.5″</td><td class="n">16.3″ × 7.5–7.7″</td></tr>
-   <tr><td><span data-l="zh">核心</span><span data-l="en">Core</span></td><td class="n" colspan="3">16 mm</td></tr>
-  </tbody>
- </table>
- </div>
- <p class="src"><span data-l="zh">數據來源：mattspickleball.com Coral Pro Review（實測）；sixzeropickleball.com/products/coral-pro（原廠規格）</span><span data-l="en">Sources: mattspickleball.com Coral Pro Review (measured); sixzeropickleball.com/products/coral-pro (factory specs)</span></p>
-
- <div class="cols c2" style="margin-top:26px">
-  <div class="match" id="matcher">
-   <p class="kick"><span data-l="zh">30 秒選拍</span><span data-l="en">30-second matcher</span></p>
-   <div class="q"><b><span data-l="zh">你最在意什麼？</span><span data-l="en">What matters most?</span></b>
-    <div>
-     <label><input type="radio" name="pri" value="fast" checked><span><span data-l="zh">網前手速</span><span data-l="en">Hand speed</span></span></label>
-     <label><input type="radio" name="pri" value="safe"><span><span data-l="zh">容錯、穩定</span><span data-l="en">Forgiveness</span></span></label>
-     <label><input type="radio" name="pri" value="reach"><span><span data-l="zh">伸展、雙反、底線火力</span><span data-l="en">Reach, two-hander, drives</span></span></label>
-     <label><input type="radio" name="pri" value="all"><span><span data-l="zh">什麼都要一點</span><span data-l="en">A bit of everything</span></span></label>
-    </div></div>
-   <div class="q"><b><span data-l="zh">你會打 USAP 比賽嗎？</span><span data-l="en">Do you play USAP events?</span></b>
-    <div>
-     <label><input type="radio" name="usap" value="no" checked><span><span data-l="zh">不會／只打 UPA</span><span data-l="en">No / UPA only</span></span></label>
-     <label><input type="radio" name="usap" value="yes"><span><span data-l="zh">會</span><span data-l="en">Yes</span></span></label>
-    </div></div>
-   <div class="res" id="res"></div>
-  </div>
-  <div>
-   <div class="fix">
-    <p class="kick" style="margin-bottom:6px"><span data-l="zh">本刊更正 · 與原簡報不同處</span><span data-l="en">Corrections to the original deck</span></p>
-    <ul style="margin:0;padding-left:18px">
-     <li><span data-l="zh">原簡報的 107.9／112.0／111.6、7.4／6.2／6.8、2,305／2,334／2,316 RPM 標示為 John Kew 數據，但我們在其公開評測中找不到這組數字，改用 Matt's Pickleball 的實測值。</span><span data-l="en">The deck's 107.9/112.0/111.6, 7.4/6.2/6.8 and 2,305/2,334/2,316 RPM were credited to John Kew, but we couldn't find them in his published review; we use Matt's Pickleball measurements instead.</span></li>
-     <li><span data-l="zh">「加長型轉速最高」不成立：三種拍型只差 4 RPM，可視為相同。</span><span data-l="en">“Elongated spins the most” doesn't hold: the shapes differ by 4 RPM — effectively identical.</span></li>
-     <li><span data-l="zh">認證已更新：原簡報只寫 UPA-A，現在三種拍型都有列入 USAP 名單的版本（見下頁）。</span><span data-l="en">Certification has changed: the deck says UPA-A only, but all three shapes now have a version on the USAP list (next page).</span></li>
-    </ul>
+   <div style="margin-top:22px">
+    <p class="kick" style="margin-bottom:4px"><span data-l="zh">怎麼讀百分位 · 以揮拍重量為例</span><span data-l="en">Reading percentiles · swing weight</span></p>
+    <div class="pct">
+     <div class="tr">
+      <span class="dot" style="left:14.2%"></span><span class="dl" style="left:14.2%"><span data-l="zh">寬體 14</span><span data-l="en">Wide 14</span></span>
+      <span class="dot" style="left:30%"></span><span class="dl" style="left:30%;bottom:-24px"><span data-l="zh">混合 30</span><span data-l="en">Hybrid 30</span></span>
+      <span class="dot" style="left:50%"></span><span class="dl" style="left:50%"><span data-l="zh">加長 50</span><span data-l="en">Long 50</span></span>
+     </div>
+     <div class="ax" style="margin-top:22px"><span data-l="zh">0 · 最輕快</span><span data-l="en">0 · quickest</span><span data-l="zh">50 · 中位數</span><span data-l="en">50 · median</span><span data-l="zh">100 · 最沉</span><span data-l="en">100 · heaviest</span></div>
+    </div>
+    <p class="small" style="margin-top:10px"><span data-l="zh">第 14 百分位的意思是：在 Matt 測過的球拍裡，只有約 14% 揮起來比它更輕快。</span><span data-l="en">The 14th percentile means only about 14% of the paddles Matt has measured swing lighter.</span></p>
    </div>
   </div>
  </div>
 </section>
 
-<!-- ===== 07 WIDEBODY FEATURE ===== -->
-<section class="slide" data-n="7">
- <p class="kick"><span data-l="zh">主打 · 新手的最強救星</span><span data-l="en">Feature · The beginner's best friend</span></p>
- <h2>Coral Pro Widebody</h2>
- <p class="deck"><span data-l="zh">三種拍型中揮拍重量最低、扭轉重量最高：拿起來快、打偏也穩。</span><span data-l="en">The lowest swing weight and highest twist weight of the three: quick in the hand and steady when you miss the center.</span></p>
- <div class="cols c2 ruled">
-  <div>
-   <p class="kick"><span data-l="zh">痛點一 · 越用力，球越飛？</span><span data-l="en">Pain point 1 · Hit harder, ball sails long?</span></p>
-   <p><span data-l="zh">明明想打到底線，球卻出界。高轉速的上旋讓球提早下墜——Matt's Pickleball 測得 Widebody 2,485 RPM，是他資料庫中的第 100 百分位。</span><span data-l="en">You aim for the baseline and the ball sails out. Heavy topspin pulls it down earlier — Matt's Pickleball measured the Widebody at 2,485 RPM, the 100th percentile in his database.</span></p>
-   <p class="kick" style="margin-top:20px"><span data-l="zh">痛點二 · 網前對峙，手速太慢？</span><span data-l="en">Pain point 2 · Too slow in hand battles?</span></p>
-   <p><span data-l="zh">對方快攻時，拍子像綁了鉛塊。Widebody 實測揮拍重量 108.75（第 14.4 百分位），屬於偏輕、好甩的一端。</span><span data-l="en">When the speed-up comes, your paddle feels like lead. The Widebody measured 108.75 swing weight (14.4th percentile) — at the light, quick end.</span></p>
-   <p class="kick" style="margin-top:20px"><span data-l="zh">痛點三 · 一打偏就翻拍？</span><span data-l="en">Pain point 3 · Paddle twists on mishits?</span></p>
-   <p><span data-l="zh">扭轉重量 7.25（第 92.7 百分位）。就算腳步沒跟上、用靠近拍框的位置擋球，拍面也比較不會翻。</span><span data-l="en">Twist weight 7.25 (92.7th percentile). Even when your feet are late and you block near the edge, the face is less likely to turn.</span></p>
-   <p class="src"><span data-l="zh">數據來源：mattspickleball.com/paddle/coral-pro-widebody-16mm</span><span data-l="en">Source: mattspickleball.com/paddle/coral-pro-widebody-16mm</span></p>
+<!-- ===== 04 FEATURE ===== -->
+<section class="slide" data-n="4" aria-label="04">
+ <div class="feature">
+  <p class="kick"><span data-l="zh">深度報導 · 同一支拍，四份成績單</span><span data-l="en">Feature · One paddle, four report cards</span></p>
+  <h2><span data-l="zh">Coral Pro 寬體<br>到底多快、多穩、多轉？</span><span data-l="en">How quick, how steady, how much spin is the Coral Pro <em>Widebody</em>?</span></h2>
+  <p style="max-width:860px"><span data-l="zh">原簡報用 John Kew 的數字，本刊用 Matt's Pickleball。我們把四個來源並排，結果很有意思：絕對數字差很多，但「誰比較快、誰比較穩」的結論完全一致。</span><span data-l="en">The original deck used John Kew's numbers; we use Matt's Pickleball. Set the four sources side by side and something interesting happens: the raw numbers disagree a lot, but the verdict on which shape is quicker and steadier doesn't change.</span></p>
+  <div class="mxwrap">
+  <table class="ftab">
+   <thead><tr><th><span data-l="zh">來源 · 寬體</span><span data-l="en">Source · Widebody</span></th><th><span data-l="zh">揮拍重量</span><span data-l="en">Swing weight</span></th><th><span data-l="zh">扭轉重量</span><span data-l="en">Twist weight</span></th><th><span data-l="zh">轉速 RPM</span><span data-l="en">Spin RPM</span></th></tr></thead>
+   <tbody>
+    <tr class="std"><td>Matt's Pickleball</td><td class="n">108.75</td><td class="n">7.25</td><td class="n">2,485</td></tr>
+    <tr><td>John Kew</td><td class="n">107.9</td><td class="n">7.4</td><td class="n">2,305</td></tr>
+    <tr><td>Pickleball Effect</td><td class="n">108</td><td class="n">7.26</td><td class="n">2,079</td></tr>
+    <tr><td><span data-l="zh">Six Zero 原廠</span><span data-l="en">Six Zero (factory)</span></td><td class="n">110</td><td class="n">7.1</td><td class="n dim">—</td></tr>
+   </tbody>
+  </table>
   </div>
+  <div class="finds">
+   <div><div class="num">4 / 4</div><h3><span data-l="zh">排名一致</span><span data-l="en">The ranking agrees</span></h3><p><span data-l="zh">四個來源都顯示：寬體是三型中揮重最低、抗扭最高的一支。快又穩，不是行銷話術，是四把尺量出來的共同結論。</span><span data-l="en">All four sources show the Widebody as the lowest swing weight and highest twist weight of the three. Quick and steady isn't marketing; it's what four different rulers agree on.</span></p></div>
+   <div><div class="num">406</div><h3><span data-l="zh">絕對值不一致</span><span data-l="en">The absolutes don't</span></h3><p><span data-l="zh">同一支拍，轉速從 2,079 到 2,485 RPM，差了 406。這不代表誰量錯，而是測法不同；跨網站比數字，等於拿公分和英吋比長短。</span><span data-l="en">The same paddle reads anywhere from 2,079 to 2,485 RPM — a 406 RPM gap. Nobody measured wrong; the methods differ. Comparing across sites is comparing centimetres with inches.</span></p></div>
+   <div><div class="num">&lt;1.3%</div><h3><span data-l="zh">轉速看拍面，不看拍型</span><span data-l="en">Spin is the face, not the shape</span></h3><p><span data-l="zh">同一實驗室裡，三種拍型的轉速差距：Matt 4 RPM、Pickleball Effect 23 RPM、John Kew 29 RPM。誰最高也不一致（Matt 是寬體，另兩家是加長）。三型用同一種拍面，轉速可視為相同。</span><span data-l="en">Within each lab the three shapes differ by 4 RPM (Matt), 23 (Pickleball Effect) and 29 (John Kew), and the top spot changes (the Widebody for Matt, the Elongated for the other two). Same face, effectively the same spin.</span></p></div>
+  </div>
+  <p class="src"><span data-l="zh">數據來源：mattspickleball.com（Coral Pro 三拍型實測頁）；John Kew Paddle Comparison Lab（johnkewpickleball.com）；pickleballeffect.com（Coral Pro Widebody／Hybrid／Elongated）；sixzeropickleball.com/products/coral-pro。查核日期 2026/11/20。</span><span data-l="en">Sources: mattspickleball.com (Coral Pro shape pages); John Kew Paddle Comparison Lab (johnkewpickleball.com); pickleballeffect.com (Coral Pro Widebody / Hybrid / Elongated); sixzeropickleball.com/products/coral-pro. Checked 20 Nov 2026.</span></p>
+ </div>
+ <p class="kick"><span data-l="zh">本刊查核 · 與原簡報對照</span><span data-l="en">Fact-check · Against the original deck</span></p>
+ <ul class="corr">
+  <li><span class="was ok"><b><span data-l="zh">確認</span><span data-l="en">Confirmed</span></b></span><span><span data-l="zh">簡報裡的 107.9／112.0／111.6（揮重）、7.4／6.2／6.8（抗扭）、2,305／2,334／2,316 RPM，確實出自 John Kew 的球拍資料庫。本刊 11/14 版曾寫「查不到」，在此更正。</span><span data-l="en">The deck's 107.9 / 112.0 / 111.6 (swing), 7.4 / 6.2 / 6.8 (twist) and 2,305 / 2,334 / 2,316 RPM do come from John Kew's paddle database. Our Nov 14 edition said we couldn't find them; that was wrong.</span></span></li>
+  <li><span class="was fix"><b><span data-l="zh">更正</span><span data-l="en">Corrected</span></b></span><span><span data-l="zh"><s>加長型「最高轉速，極致下墜」</s>：三型轉速差不到 1.3%，可視為相同。</span><span data-l="en"><s>Elongated has <q>the highest spin</q></s>: the three shapes differ by under 1.3% — effectively identical.</span></span></li>
+  <li><span class="was fix"><b><span data-l="zh">更正</span><span data-l="en">Corrected</span></b></span><span><span data-l="zh"><s>Tier 1「損耗率 &lt;5%」</s>：John Kew 的 Tier 1 是「沒有可量測的轉速流失」，Coral Pro 在 100 次撞擊後反而 +0.7%；約 5% 流失是 Tier 2（初代 Coral 的等級）。</span><span data-l="en"><s>Tier 1 means <q>under 5% loss</q></s>: John Kew's Tier 1 is no measurable loss — the Coral Pro actually gained 0.7% after 100 impacts. About 5% loss is Tier 2, where the original Coral sits.</span></span></li>
+  <li><span class="was fix"><b><span data-l="zh">更正</span><span data-l="en">Corrected</span></b></span><span><span data-l="zh"><s>加長型是「單打重砲」</s>：三型的力量數據非常接近（Matt 發球 60.2–60.5 mph；KewCOR 0.410–0.413），各家排序也不一致。加長型的優勢是伸展與槓桿，不是更大的火力。</span><span data-l="en"><s>The Elongated is the <q>power assassin</q></s>: power numbers are nearly identical across shapes (Matt's serve speeds 60.2–60.5 mph; KewCOR 0.410–0.413) and labs don't agree on the order. The Elongated's edge is reach and leverage, not extra firepower.</span></span></li>
+  <li><span class="was fix"><b><span data-l="zh">更正</span><span data-l="en">Corrected</span></b></span><span><span data-l="zh"><s>「用拍框邊緣擋球依然穩如泰山」</s>：抗扭幫的是偏離中心的球，打到拍框不在其中。另將「力氣小的女生也能閃電出拍」改為不分性別：低揮重對任何手臂力量較小的球友都有幫助。</span><span data-l="en"><s><q>Rock-steady even off the frame</q></s>: twist weight helps off-centre hits, not frame hits. We also dropped the deck's gendered line — a low swing weight helps any player with less arm strength.</span></span></li>
+  <li><span class="was upd"><b><span data-l="zh">更新</span><span data-l="en">Updated</span></b></span><span><span data-l="zh"><s>只有「UPA-A 專業認證」</s>：USAP 名單已於 10/1 列入混合型、11/6 列入寬體與加長型；官網現售「UPA &amp; USAP」雙認證版（三種拍型皆有）。</span><span data-l="en"><s><q>UPA-A approved</q> only</s>: the USAP list added the Hybrid on 1 Oct and the Widebody and Elongated on 6 Nov; the store now sells a <q>UPA &amp; USAP</q> version in all three shapes.</span></span></li>
+  <li><span class="was ok"><b><span data-l="zh">確認</span><span data-l="en">Confirmed</span></b></span><span><span data-l="zh">定價 US$220、用 NINJA 9 折為 US$198（UPA 版）；Toray 碳纖維、Gen-4 熱壓成型、全泡棉（EPP）核心、一年保固，均與 John Kew 資料庫及原廠一致。</span><span data-l="en">US$220 list, US$198 with NINJA (UPA version); Toray carbon, Gen-4 thermoformed, all-foam (EPP) core and a one-year warranty all match John Kew's database and the maker.</span></span></li>
+ </ul>
+</section>
+
+<!-- ===== 05 LEADERBOARD ===== -->
+<section class="slide" data-n="5" aria-label="05">
+ <p class="kick"><span data-l="zh">排行榜 · Coral Pro 三拍型</span><span data-l="en">Leaderboard · Three Coral Pro shapes</span></p>
+ <h2><span data-l="zh">誰的手最快？誰最穩？</span><span data-l="en">Quickest hands? Steadiest <em>face</em>?</span></h2>
+ <p class="deck"><span data-l="zh">預設是本刊給新手的推薦順序。換個排序看看，或切到 John Kew 的數字——排名幾乎不會變。</span><span data-l="en">The default order is our pick for beginners. Re-sort it, or switch to John Kew's numbers — the order barely moves.</span></p>
+ <div class="ctrl">
+  <div class="seg" id="sortSeg" role="group"><span class="lbl"><span data-l="zh">排序</span><span data-l="en">Sort</span></span></div>
+  <div class="seg" id="labSeg" role="group"><span class="lbl"><span data-l="zh">實驗室</span><span data-l="en">Lab</span></span></div>
+ </div>
+ <div class="lb">
   <div>
-   <h3><span data-l="zh">它是怎麼做的</span><span data-l="en">How it's built</span></h3>
+   <ol class="rows" id="rows"></ol>
+   <p class="rnote" id="rnote"></p>
+  </div>
+  <aside class="card" id="card" aria-live="polite"></aside>
+ </div>
+</section>
+
+<!-- ===== 06 FEEL MAP & MATRIX ===== -->
+<section class="slide" data-n="6" aria-label="06">
+ <p class="kick"><span data-l="zh">手感地圖 · 規格總表</span><span data-l="en">Feel map · Spec matrix</span></p>
+ <h2><span data-l="zh">把三種拍型放上同一張地圖</span><span data-l="en">Three shapes, one <em>map</em></span></h2>
+ <div class="cols c46">
+  <div>
+   <p class="axy"><span data-l="zh">↑ 扭轉重量百分位（越上越寬容）</span><span data-l="en">↑ Twist-weight percentile (higher = more forgiving)</span></p>
+   <div class="map" role="img" aria-label="Feel map / 手感地圖">
+    <span class="q q1"><span data-l="zh">快又穩</span><span data-l="en">Quick &amp; forgiving</span></span>
+    <span class="q q2"><span data-l="zh">沉又穩</span><span data-l="en">Solid &amp; forgiving</span></span>
+    <span class="q q3"><span data-l="zh">快但敏感</span><span data-l="en">Quick but twitchy</span></span>
+    <span class="q q4"><span data-l="zh">沉且敏感</span><span data-l="en">Heavy &amp; twitchy</span></span>
+    <span class="pt r" style="left:14.2%;bottom:92.7%"><i></i><span><span data-l="zh">寬體</span><span data-l="en">Widebody</span></span></span>
+    <span class="pt" style="left:30%;bottom:67.2%"><i></i><span><span data-l="zh">混合</span><span data-l="en">Hybrid</span></span></span>
+    <span class="pt" style="left:50%;bottom:15.9%"><i></i><span><span data-l="zh">加長</span><span data-l="en">Elongated</span></span></span>
+   </div>
+   <div class="axx"><span data-l="zh">← 揮重百分位低（輕快）</span><span data-l="en">← Low swing-weight pct (quick)</span><span data-l="zh">高（沉、有推送感）→</span><span data-l="en">High (heavy, plow) →</span></div>
+   <p class="small" style="margin-top:12px"><span data-l="zh">座標＝在 Matt's Pickleball 資料庫中的百分位，十字線＝中位數。寬體（14, 93）、混合（30, 67）、加長（50, 16）。</span><span data-l="en">Position = percentile in the Matt's Pickleball database; the crosshair is the median. Widebody (14, 93), Hybrid (30, 67), Elongated (50, 16).</span></p>
+   <p class="kick" style="margin:22px 0 6px"><span data-l="zh">實際尺寸對照 · 依原廠規格等比例</span><span data-l="en">True-scale outlines · factory dimensions</span></p>
+   <div class="shapes">
+    <figure><svg width="86" height="176" viewBox="0 0 86 176" aria-hidden="true"><rect x="2" y="2" width="81" height="103" rx="14" fill="none" stroke="#161513" stroke-width="2"/><rect x="35" y="105" width="15" height="55" rx="4" fill="#A3311D"/></svg><figcaption><span data-l="zh">寬體</span><span data-l="en">Widebody</span><br>15.8″ × 8.1″</figcaption></figure>
+    <figure><svg width="80" height="176" viewBox="0 0 80 176" aria-hidden="true"><rect x="2" y="1" width="77" height="108" rx="14" fill="none" stroke="#161513" stroke-width="2"/><rect x="32" y="109" width="15" height="55" rx="4" fill="#A3311D"/></svg><figcaption><span data-l="zh">混合</span><span data-l="en">Hybrid</span><br>16.3″ × 7.7″</figcaption></figure>
+    <figure><svg width="78" height="176" viewBox="0 0 78 176" aria-hidden="true"><rect x="2" y="1" width="75" height="108" rx="14" fill="none" stroke="#161513" stroke-width="2"/><rect x="31" y="109" width="15" height="57" rx="4" fill="#A3311D"/></svg><figcaption><span data-l="zh">加長</span><span data-l="en">Elongated</span><br>16.5″ × 7.5″</figcaption></figure>
+   </div>
+   <p class="small"><span data-l="zh">紅色為握把（寬體、混合 5.5″，加長 5.75″）。示意圖，非產品外觀。</span><span data-l="en">Handles in red (5.5″ Widebody and Hybrid, 5.75″ Elongated). Schematic, not the product's actual look.</span></p>
+  </div>
+  <div class="mxwrap">
    <table class="mx">
-    <tr><td><span data-l="zh">拍面</span><span data-l="en">Face</span></td><td><span data-l="zh">Toray 碳纖維，Double Diamond Tough 粗糙面</span><span data-l="en">Toray carbon, Double Diamond Tough grit</span></td></tr>
-    <tr><td><span data-l="zh">核心</span><span data-l="en">Core</span></td><td><span data-l="zh">16 mm 全泡棉：EPP 中心 + EVA 浮動泡棉帶（Tectonic Core）</span><span data-l="en">16 mm all-foam: EPP centre + floating EVA band (Tectonic Core)</span></td></tr>
-    <tr><td><span data-l="zh">結構</span><span data-l="en">Build</span></td><td><span data-l="zh">Gen-4 一體成型熱壓</span><span data-l="en">Gen-4 thermoformed unibody</span></td></tr>
-    <tr><td><span data-l="zh">耐用度</span><span data-l="en">Durability</span></td><td><span data-l="zh">Tier 1（100 次撞擊後無可量測流失）</span><span data-l="en">Tier 1 (no measurable loss after 100 impacts)</span></td></tr>
-    <tr><td><span data-l="zh">保固</span><span data-l="en">Warranty</span></td><td><span data-l="zh">12 個月結構保固</span><span data-l="en">12-month structural warranty</span></td></tr>
-    <tr><td><span data-l="zh">認證</span><span data-l="en">Approval</span></td><td><span data-l="zh">原本只有 UPA-A。USAP 名單在 2026/10/1 加入混合型（Peel Ply 表面），11/6 再加入寬體與加長型。官網另售「UPA & USAP」雙認證版。</span><span data-l="en">Originally UPA-A only. The USAP list added the hybrid (Peel Ply surface) on Oct 1, 2026, and the widebody and elongated on Nov 6. Six Zero also sells a “UPA & USAP” version.</span></td></tr>
-    <tr><td><span data-l="zh">售價</span><span data-l="en">Price</span></td><td><span data-l="zh">US$220（UPA 版）；用 NINJA 9 折約 US$198。雙認證混合型 US$229。</span><span data-l="en">US$220 (UPA version); about US$198 with NINJA. Dual-approved hybrid: US$229.</span></td></tr>
+    <thead><tr><th></th><th><span data-l="zh">寬體</span><span data-l="en">Widebody</span></th><th><span data-l="zh">混合</span><span data-l="en">Hybrid</span></th><th><span data-l="zh">加長</span><span data-l="en">Elongated</span></th></tr></thead>
+    <tbody>
+     <tr class="grp"><td colspan="4"><span data-l="zh">實測 · Matt's Pickleball（括號為百分位）</span><span data-l="en">Measured · Matt's Pickleball (percentile)</span></td></tr>
+     <tr><td><span data-l="zh">揮拍重量</span><span data-l="en">Swing weight</span></td><td class="n best">108.75 <small>(14)</small></td><td class="n">111.65 <small>(30)</small></td><td class="n">114.3 <small>(50)</small></td></tr>
+     <tr><td><span data-l="zh">扭轉重量</span><span data-l="en">Twist weight</span></td><td class="n best">7.25 <small>(93)</small></td><td class="n">6.65 <small>(67)</small></td><td class="n">6.0 <small>(16)</small></td></tr>
+     <tr><td><span data-l="zh">轉速 RPM</span><span data-l="en">Spin RPM</span></td><td class="n">2,485 <small>(99.6)</small></td><td class="n">2,481 <small>(98.9)</small></td><td class="n">2,483 <small>(99.4)</small></td></tr>
+     <tr><td><span data-l="zh">靜態重量</span><span data-l="en">Static weight</span></td><td class="n">8.22 oz</td><td class="n">8.11 oz</td><td class="n">8.01 oz</td></tr>
+     <tr><td><span data-l="zh">發球球速</span><span data-l="en">Serve speed</span></td><td class="n">60.2 mph</td><td class="n">60.4 mph</td><td class="n">60.5 mph</td></tr>
+     <tr><td><span data-l="zh">推擋截擊球速</span><span data-l="en">Punch volley</span></td><td class="n">39.1 mph</td><td class="n">39.0 mph</td><td class="n">38.9 mph</td></tr>
+     <tr><td><span data-l="zh">拍面粗糙度 Ra</span><span data-l="en">Face roughness Ra</span></td><td class="n">8.92 µm</td><td class="n">8.77 µm</td><td class="n">8.83 µm</td></tr>
+     <tr class="grp"><td colspan="4"><span data-l="zh">實測 · John Kew</span><span data-l="en">Measured · John Kew</span></td></tr>
+     <tr><td><span data-l="zh">揮重／抗扭</span><span data-l="en">Swing / twist</span></td><td class="n best">107.9 / 7.4</td><td class="n">111.6 / 6.8</td><td class="n">112.0 / 6.2</td></tr>
+     <tr><td><span data-l="zh">轉速 RPM</span><span data-l="en">Spin RPM</span></td><td class="n">2,305</td><td class="n">2,316</td><td class="n">2,334</td></tr>
+     <tr><td>KewCOR</td><td class="n">0.413</td><td class="n">0.413</td><td class="n">0.410</td></tr>
+     <tr class="grp"><td colspan="4"><span data-l="zh">原廠規格 · Six Zero</span><span data-l="en">Factory specs · Six Zero</span></td></tr>
+     <tr><td><span data-l="zh">揮重／抗扭</span><span data-l="en">Swing / twist</span></td><td class="n">110 / 7.1</td><td class="n">114 / 6.70</td><td class="n">117 / 5.9</td></tr>
+     <tr><td><span data-l="zh">拍長 × 拍寬</span><span data-l="en">Length × width</span></td><td class="n">15.8″ × 8.0–8.1″</td><td class="n">16.3″ × 7.5–7.7″</td><td class="n">16.5″ × 7.3–7.5″</td></tr>
+     <tr><td><span data-l="zh">握把長度</span><span data-l="en">Handle length</span></td><td class="n">5.5″</td><td class="n">5.5″</td><td class="n best">5.75″</td></tr>
+     <tr><td><span data-l="zh">共同規格</span><span data-l="en">Shared</span></td><td colspan="3" class="small"><span data-l="zh">16 mm 核心（Tectonic Core、ProPulsion 泡棉）· 8.0–8.3 oz · 握把周長 4.0–4.13″ · Double Diamond Tough 碳纖維拍面</span><span data-l="en">16 mm core (Tectonic Core, ProPulsion foam) · 8.0–8.3 oz · 4.0–4.13″ grip · Double Diamond Tough carbon face</span></td></tr>
+     <tr class="grp"><td colspan="4"><span data-l="zh">認證</span><span data-l="en">Approval</span></td></tr>
+     <tr><td><span data-l="zh">USAP 型號</span><span data-l="en">USAP model</span></td><td class="n">RCD-W 16MM<br><small>2026/11/06</small></td><td class="n">RCD 16MM<br><small>2026/10/01</small></td><td class="n">RCD-E 16MM<br><small>2026/11/06</small></td></tr>
+     <tr><td>UPA-A</td><td class="n">✓</td><td class="n">✓</td><td class="n">✓</td></tr>
+    </tbody>
    </table>
-   <p class="src"><span data-l="zh">來源：Matt's Pickleball、John Kew、Spinwave、Six Zero 官網、Pickleball Insiders（USAP 更新）、JustPaddles（熱壓成型）</span><span data-l="en">Sources: Matt's Pickleball, John Kew, Spinwave, Six Zero store, Pickleball Insiders (USAP update), JustPaddles (thermoformed)</span></p>
-   <div class="inline-code"><span class="code">NINJA</span><button class="btn copy" data-code="NINJA"><span data-l="zh">複製</span><span data-l="en">Copy</span></button><a class="btn ghost" href="https://www.sixzeropickleball.com/products/coral-pro?sca_ref=11914723.sbiWIzNDK28ii" target="_blank" rel="noopener"><span data-l="zh">看 Coral Pro →</span><span data-l="en">See Coral Pro →</span></a></div>
-   <p class="small"><span data-l="zh">USAP 版本的表面可能不同，上表的轉速實測來自粗糙面 UPA 版本，手感與轉速未必相同。要打 USAP 比賽，請選「UPA & USAP」版本並核對 USAP 名單上的型號。揭露：Coach Ninja 為 Six Zero 官方品牌推廣大使。</span><span data-l="en">The USAP version may use a different surface; the spin figures above come from the rough-face UPA version, so feel and spin may differ. For USAP events, buy the “UPA & USAP” version and check the model code on the USAP list. Disclosure: Coach Ninja is an official Six Zero brand ambassador.</span></p>
+   <p class="src"><span data-l="zh">數據來源：mattspickleball.com/paddle/coral-pro-widebody-16mm（及 hybrid、elongated 頁）；John Kew Paddle Comparison Lab；sixzeropickleball.com/products/coral-pro；equipment.usapickleball.org（Approved Paddle List）。紅字＝該項三型中最佳。</span><span data-l="en">Sources: mattspickleball.com/paddle/coral-pro-widebody-16mm (and the hybrid and elongated pages); John Kew Paddle Comparison Lab; sixzeropickleball.com/products/coral-pro; equipment.usapickleball.org (Approved Paddle List). Red = best of the three on that row.</span></p>
   </div>
  </div>
+</section>
+
+<!-- ===== 07 MATCHER & BUYING NOTES ===== -->
+<section class="slide" data-n="7" aria-label="07">
+ <p class="kick"><span data-l="zh">30 秒選刀 · 購買須知</span><span data-l="en">30-second matcher · Before you buy</span></p>
+ <h2><span data-l="zh">你的武器是哪一把？</span><span data-l="en">Which one is <em>yours</em>?</span></h2>
+ <div class="cols c2">
+  <div>
+   <form class="match" id="matchForm" onsubmit="return false">
+    <fieldset class="qq"><legend><span data-l="zh">1 · 你最想改善什麼？</span><span data-l="en">1 · What do you most want to fix?</span></legend>
+     <div class="opts">
+      <label><input type="radio" name="pri" value="fast" checked><span><span data-l="zh">網前手速</span><span data-l="en">Hand speed at the net</span></span></label>
+      <label><input type="radio" name="pri" value="safe"><span><span data-l="zh">一打偏就翻拍</span><span data-l="en">Face twists on mishits</span></span></label>
+      <label><input type="radio" name="pri" value="reach"><span><span data-l="zh">伸展、雙手反拍</span><span data-l="en">Reach, two-handed backhand</span></span></label>
+      <label><input type="radio" name="pri" value="all"><span><span data-l="zh">什麼都要一點</span><span data-l="en">A bit of everything</span></span></label>
+     </div>
+    </fieldset>
+    <fieldset class="qq"><legend><span data-l="zh">2 · 你的程度？</span><span data-l="en">2 · Your level?</span></legend>
+     <div class="opts">
+      <label><input type="radio" name="lvl" value="new" checked><span><span data-l="zh">新手</span><span data-l="en">Beginner</span></span></label>
+      <label><input type="radio" name="lvl" value="mid"><span><span data-l="zh">有基礎／進階</span><span data-l="en">Intermediate or above</span></span></label>
+     </div>
+    </fieldset>
+    <fieldset class="qq"><legend><span data-l="zh">3 · 會打 USAP 認證的比賽嗎？</span><span data-l="en">3 · Will you play USAP-sanctioned events?</span></legend>
+     <div class="opts">
+      <label><input type="radio" name="usap" value="no" checked><span><span data-l="zh">不會</span><span data-l="en">No</span></span></label>
+      <label><input type="radio" name="usap" value="maybe"><span><span data-l="zh">不確定</span><span data-l="en">Not sure</span></span></label>
+      <label><input type="radio" name="usap" value="yes"><span><span data-l="zh">會</span><span data-l="en">Yes</span></span></label>
+     </div>
+    </fieldset>
+    <div class="res" id="res" aria-live="polite"></div>
+   </form>
+   <div class="inline-code">
+    <span class="code">NINJA</span>
+    <button class="btn copy" type="button" data-code="NINJA"><span data-l="zh">複製折扣碼</span><span data-l="en">Copy code</span></button>
+    <a class="btn ghost" href="https://www.sixzeropickleball.com/products/coral-pro?sca_ref=11914723.sbiWIzNDK28ii" target="_blank" rel="noopener"><span data-l="zh">看 Coral Pro →</span><span data-l="en">See the Coral Pro →</span></a>
+    <span class="small" style="flex-basis:100%"><span data-l="zh">結帳輸入 NINJA 享 9 折；連結不會自動套用折扣碼。揭露：Coach Ninja 為 Six Zero 官方品牌推廣大使。</span><span data-l="en">Enter NINJA at checkout for 10% off; the link doesn't apply the code. Disclosure: Coach Ninja is an official Six Zero brand ambassador.</span></span>
+   </div>
+  </div>
+  <ol class="notes">
+   <li><span class="n">1</span><div><h3><span data-l="zh">兩種版本，價格不同</span><span data-l="en">Two versions, two prices</span></h3><p><span data-l="zh">官網分「UPA 版」與「UPA &amp; USAP 雙認證版」，三種拍型都有。定價：UPA 版 US$220（台灣顯示 NT$7,395）、雙認證版 US$229（NT$7,698）。用 NINJA 9 折約 US$198／US$206。截稿（11/20）時官網另有限時 8 折／85 折；折扣碼能否疊加，以結帳頁為準。台幣價格依匯率換算，會變動。</span><span data-l="en">The store sells a <q>UPA</q> version and a <q>UPA &amp; USAP</q> version, both in all three shapes. List prices: US$220 for UPA (NT$7,395 as shown in Taiwan) and US$229 for dual-approved (NT$7,698) — about US$198 / US$206 with NINJA. At press time (20 Nov) the store also had a time-limited 20% / 15% sale; whether the code stacks is shown at checkout. NT$ prices are currency conversions and will move.</span></p></div></li>
+   <li><span class="n">2</span><div><h3><span data-l="zh">USAP 比賽：認型號</span><span data-l="en">USAP events: check the model code</span></h3><p><span data-l="zh">USAP 核可名單上的 Coral Pro：混合 RCD 16MM（10/1）、加長 RCD-E 16MM 與寬體 RCD-W 16MM（11/6）。要打 USAP 比賽，請買雙認證版，並核對拍上型號。已核可的拍子不會因 10/1 新制被取消。</span><span data-l="en">Coral Pro entries on the USAP approved list: Hybrid RCD 16MM (1 Oct), Elongated RCD-E 16MM and Widebody RCD-W 16MM (6 Nov). For USAP events, buy the dual-approved version and check the code on the paddle. Paddles already approved stay approved under the new 1 Oct rule.</span></p></div></li>
+   <li><span class="n">3</span><div><h3><span data-l="zh">實測數據來自上市版</span><span data-l="en">Lab data comes from launch units</span></h3><p><span data-l="zh">本刊引用的實驗室數據，測的是 2026 年 6 月上市時的版本（當時只有 UPA-A）。雙認證版的拍面是否相同，Six Zero 官網沒有說明，手感與轉速未必和表格一致。</span><span data-l="en">The lab figures we cite were measured on units from the June 2026 launch, when only the UPA-A version existed. Six Zero doesn't say whether the dual-approved face is identical, so feel and spin may not match the tables.</span></p></div></li>
+   <li><span class="n">4</span><div><h3><span data-l="zh">耐用度：實驗室怎麼說</span><span data-l="en">Durability: what the labs say</span></h3><p><span data-l="zh">John Kew：100 次高速撞擊後轉速 +0.7%，列 Tier 1。Pickleball Effect：磨耗測試後保留 95% 的拍面粗糙度（一般碳纖維平均 81%）。原廠「8 倍耐用」是品牌宣稱。保固為 12 個月結構性保固，涵蓋製造瑕疵，不含正常磨耗。</span><span data-l="en">John Kew: spin up 0.7% after 100 high-speed impacts — Tier 1. Pickleball Effect: 95% of face roughness retained after wear testing (raw carbon averages 81%). The <q>8x durability</q> line is the maker's own claim. The warranty is a 12-month structural one for manufacturing defects, not normal wear.</span></p></div></li>
+   <li><span class="n">5</span><div><h3><span data-l="zh">新手要知道的副作用</span><span data-l="en">A side effect beginners should know</span></h3><p><span data-l="zh">Matt 提醒：這麼「咬球」的拍面，連打偏的球都會加轉，放小球可能飄、平擊發球會多跳一點，通常練一兩次就能適應。</span><span data-l="en">Matt's caveat: a face this grabby adds spin even to mishits, so loose drops can float and flat serves kick more than expected. It usually takes a session or two to adjust.</span></p></div></li>
+  </ol>
+ </div>
+ <p class="src"><span data-l="zh">來源：sixzeropickleball.com 與 us.sixzeropickleball.com（Coral Pro 商品頁，2026/11/20 查核）；equipment.usapickleball.org；johnkewpickleball.com（Six Zero Coral Pro Review）；pickleballeffect.com（Coral Pro Hybrid／Elongated）；mattspickleball.com（Six Zero Coral Pro Review）。</span><span data-l="en">Sources: sixzeropickleball.com and us.sixzeropickleball.com (Coral Pro product pages, checked 20 Nov 2026); equipment.usapickleball.org; johnkewpickleball.com (Six Zero Coral Pro Review); pickleballeffect.com (Coral Pro Hybrid / Elongated); mattspickleball.com (Six Zero Coral Pro Review).</span></p>
 </section>
 
 <!-- ===== 08 COACH'S CORNER ===== -->
-<section class="slide" data-n="8">
- <div class="coach">
+<section class="slide" data-n="8" aria-label="08">
+ <div class="corner">
   <p class="kick"><span data-l="zh">教練專欄 · Coach's Corner</span><span data-l="en">Coach's Corner</span></p>
-  <h2><span data-l="zh">拍子選對了，接下來練對方法</span><span data-l="en">Right paddle. Now the right practice.</span></h2>
-  <div class="cols c2" style="margin-top:20px">
+  <h2><span data-l="zh">拍子選好了，<br>接下來換你的手</span><span data-l="en">Paddle sorted.<br>Now train the <em>hands</em>.</span></h2>
+  <div class="cols c3" style="margin-top:14px;gap:30px">
    <div>
-    <p><span data-l="zh">Coach Ninja，NinjaPB Performance Academy 創辦人，RPO Level 1 認證教練、Six Zero 官方品牌推廣大使，在雙北帶 2–4 人小班，從新手到 DUPR 進階都能上。</span><span data-l="en">Coach Ninja founded NinjaPB Performance Academy. He is RPO Level 1 certified and an official Six Zero brand ambassador, and teaches 2–4 player groups in Taipei and New Taipei, from beginners to DUPR advanced.</span></p>
-    <h3 style="color:#fff;margin-top:18px"><span data-l="zh">本期三個練習</span><span data-l="en">Three drills for this issue</span></h3>
-    <ul>
-     <li><span data-l="zh">上旋底線抽球：瞄準底線前一步，感受球提早下墜。</span><span data-l="en">Topspin drives: aim one step inside the baseline and feel the ball dip.</span></li>
-     <li><span data-l="zh">網前快手對攻：雙方站廚房線，連續 20 球不掉。</span><span data-l="en">Kitchen-line hand battles: both at the line, 20 balls in a row.</span></li>
-     <li><span data-l="zh">偏心擋球：刻意用拍框附近擋快球，練穩定的拍面角度。</span><span data-l="en">Off-center blocks: block fast balls near the edge to train a stable face.</span></li>
+    <p><span data-l="zh">Coach Ninja，NinjaPB Performance Academy 創辦人，RPO Level 1 國際匹克球教練、Six Zero 官方品牌推廣大使。在雙北室內外球場帶 2–4 人小班，從新手入門、有基礎、進階（DUPR）到團體比賽特訓都能上。</span><span data-l="en">Coach Ninja founded NinjaPB Performance Academy. He is an RPO Level 1 certified coach and an official Six Zero brand ambassador, teaching groups of 2–4 at indoor and outdoor courts in Taipei and New Taipei — from first-timers to DUPR-advanced players and team-match prep.</span></p>
+    <ul class="facts">
+     <li><span data-l="zh">每堂 60 分鐘 · 平日白天、平日晚上、週末可選</span><span data-l="en">60-minute lessons · weekday daytime, weekday evenings or weekends</span></li>
+     <li><span data-l="zh">內容：動力鏈揮拍、過渡區手感、攻守決策、雙打跑位</span><span data-l="en">Covers kinetic-chain swings, transition-zone touch, attack-or-reset decisions and doubles positioning</span></li>
+     <li><span data-l="zh">人數未湊齊也可以私訊，教練幫忙揪團</span><span data-l="en">Not enough players? DM anyway — he can help fill a group</span></li>
     </ul>
-    <p class="small" style="color:#a9a294;margin-top:8px"><span class="tag view" style="color:#e8a08f;border-color:#e8a08f"><span data-l="zh">本刊觀點</span><span data-l="en">Our view</span></span></p>
    </div>
    <div>
     <div class="price">
-     <p class="kick" style="margin-bottom:6px"><span data-l="zh">小班課程 · 60 分鐘／堂 · 每人每堂</span><span data-l="en">Small groups · 60 min · per person per lesson</span></p>
-     <div class="row"><span><span data-l="zh">2 人班</span><span data-l="en">2 players</span></span><b>NT$800</b></div>
-     <div class="row"><span><span data-l="zh">3 人班</span><span data-l="en">3 players</span></span><b>NT$600</b></div>
-     <div class="row"><span><span data-l="zh">4 人班（整班 NT$2,000）</span><span data-l="en">4 players (NT$2,000 per group)</span></span><b>NT$500</b></div>
-     <p class="small" style="color:#a9a294;margin:10px 0 0"><span data-l="zh">場地費另計。平日白天、晚上與週末皆可。</span><span data-l="en">Court fees extra. Weekday daytime, evenings and weekends.</span></p>
+     <p class="kick" style="margin-bottom:6px"><span data-l="zh">小班課程 · 每人每堂</span><span data-l="en">Small groups · per person, per lesson</span></p>
+     <table>
+      <tr><td><span data-l="zh">2 人班</span><span data-l="en">2 players</span></td><td>NT$800</td></tr>
+      <tr><td><span data-l="zh">3 人班</span><span data-l="en">3 players</span></td><td>NT$600</td></tr>
+      <tr><td><span data-l="zh">4 人班<br><small>整班 NT$2,000</small></span><span data-l="en">4 players<br><small>NT$2,000 per group</small></span></td><td>NT$500</td></tr>
+     </table>
+     <p class="small" style="margin:10px 0 0"><span data-l="zh">場地費另計，可配合學員就近的球場。</span><span data-l="en">Court fees extra; courts near you can be arranged.</span></p>
     </div>
-    <p style="margin-top:16px"><span data-l="zh">學員可免費試打 Six Zero 旗艦拍（包括 Coral Pro），並獲得配重與鉛片建議。</span><span data-l="en">Students can try Six Zero flagship paddles (including the Coral Pro) for free and get weighting and lead-tape advice.</span></p>
-    <div class="coderow" style="margin:14px 0">
-     <span class="code" style="color:#fff;font-size:34px">NINJA</span>
-     <button class="btn copy" data-code="NINJA"><span data-l="zh">複製折扣碼</span><span data-l="en">Copy code</span></button>
-    </div>
-    <div class="coderow">
+    <div class="links">
      <a class="btn" href="https://ninjapb.vercel.app/" target="_blank" rel="noopener"><span data-l="zh">預約課程</span><span data-l="en">Book a lesson</span></a>
      <a class="btn ghost" href="https://ig.me/m/ninjapbtw" target="_blank" rel="noopener"><span data-l="zh">IG 私訊 @ninjapbtw</span><span data-l="en">DM @ninjapbtw</span></a>
+     <a class="btn ghost" href="https://www.instagram.com/ninjapbtw/" target="_blank" rel="noopener">Instagram</a>
      <a class="btn ghost" href="https://pickleball-ninja.vercel.app/" target="_blank" rel="noopener"><span data-l="zh">線上戰術手冊</span><span data-l="en">Tactics handbook</span></a>
     </div>
    </div>
+   <div>
+    <p class="kick" style="margin-bottom:4px"><span data-l="zh">本期三個練習 · 對應三個痛點</span><span data-l="en">Three drills · one per problem</span> <span class="tag view" style="border-color:#ea9f8c;color:#ea9f8c"><span data-l="zh">教練觀點</span><span data-l="en">Coach's view</span></span></p>
+    <ol class="drills">
+     <li><span class="n">1</span><div><b><span data-l="zh">越用力越出界 → 上旋抽球階梯</span><span data-l="en">Drives sail long → topspin ladder</span></b><span><span data-l="zh">從廚房線開始，每退一步連續 10 球，由下往上刷，目標落在底線前一大步。退到底線還能控住，才加速。</span><span data-l="en">Start at the kitchen line; at each step back hit 10 in a row with a low-to-high brush, landing a big step inside the baseline. Only add pace once you can hold it from the baseline.</span></span></div></li>
+     <li><span class="n">2</span><div><b><span data-l="zh">網前手太慢 → 廚房線快手對攻</span><span data-l="en">Slow at the net → kitchen-line hands</span></b><span><span data-l="zh">拍頭朝上、拍子放在胸前，雙方連續 20 球不掉；動作只用手腕和前臂，不准大拉拍。</span><span data-l="en">Paddle tip up, paddle in front of your chest, 20 balls in a row with your partner. Wrist and forearm only — no big backswings.</span></span></div></li>
+     <li><span class="n">3</span><div><b><span data-l="zh">打偏就翻拍 → 過渡區重置</span><span data-l="en">Face twists on mishits → transition resets</span></b><span><span data-l="zh">同伴從後場抽球，你站在過渡區，用放鬆的握拍把球擋進廚房。握得越緊，拍面越容易被打歪。</span><span data-l="en">Your partner drives from the back; you stand in the transition zone and soak the ball into the kitchen with a relaxed grip. The tighter you squeeze, the more the face gets knocked off line.</span></span></div></li>
+    </ol>
+   </div>
   </div>
-  <p class="disc"><span data-l="zh">揭露：Coach Ninja 為 Six Zero 官方品牌推廣大使；使用折扣碼 NINJA 或推薦連結購買，教練可能獲得回饋。本刊數據皆標明出處；標示「本刊觀點」者為教練個人看法。</span><span data-l="en">Disclosure: Coach Ninja is an official Six Zero brand ambassador and may earn a commission on purchases made with the NINJA code or referral links. All data is sourced; items marked “Our view” are the coach's own opinion.</span></p>
+  <div class="perk">
+   <div class="cols c2" style="gap:24px;align-items:center">
+    <div>
+     <p class="kick" style="margin-bottom:6px"><span data-l="zh">學員福利</span><span data-l="en">Student perk</span></p>
+     <p style="margin:0"><span data-l="zh">上課可免費試打 Six Zero 旗艦拍（含 Coral Pro 全系列，三種拍型都能摸到），並提供配重與鉛片建議。小提醒：鉛片只會讓揮重<b>變高</b>、不會變低；貼在 3 點與 9 點鐘位置，主要是提升抗扭。</span><span data-l="en">Try Six Zero flagship paddles for free in class — including every Coral Pro shape — and get weighting and lead-tape advice. One note: lead tape only ever <b>raises</b> swing weight, never lowers it; at 3 and 9 o'clock it mainly adds twist weight.</span></p>
+    </div>
+    <div>
+     <div class="coderow"><span class="code">NINJA</span><button class="btn copy" type="button" data-code="NINJA"><span data-l="zh">複製折扣碼</span><span data-l="en">Copy code</span></button><a class="btn ghost" href="https://www.sixzeropickleball.com/NINJA" target="_blank" rel="noopener"><span data-l="zh">Six Zero 官網 →</span><span data-l="en">Six Zero store →</span></a></div>
+     <p class="small" style="margin:10px 0 0"><span data-l="zh">Six Zero 官網結帳輸入 NINJA 享 9 折（推薦連結不會自動套用）。</span><span data-l="en">10% off at the Six Zero store with NINJA at checkout (the referral link doesn't apply it).</span></p>
+    </div>
+   </div>
+  </div>
+  <p class="src" style="margin-top:18px"><span data-l="zh">揭露：Coach Ninja 為 Six Zero 官方品牌推廣大使；使用折扣碼 NINJA 或推薦連結購買，教練可能獲得回饋。本刊數據皆標明出處；標示「本刊觀點」「教練觀點」者為個人看法。課程資訊來源：ninjapb.vercel.app、ninjapb-workout.netlify.app（2026/11/20 查核）。</span><span data-l="en">Disclosure: Coach Ninja is an official Six Zero brand ambassador and may earn a commission on purchases made with the NINJA code or referral links. All data is sourced; items marked <q>Our view</q> or <q>Coach's view</q> are opinion. Lesson details from ninjapb.vercel.app and ninjapb-workout.netlify.app (checked 20 Nov 2026).</span></p>
+ </div>
+ <div class="sources">
+  <p class="kick" style="margin:0"><span data-l="zh">本期資料來源 · 修訂紀錄</span><span data-l="en">Sources · Revision log</span></p>
+  <ol>
+   <li><a href="https://www.mattspickleball.com/blog/six-zero-coral-pro-review" target="_blank" rel="noopener">Matt's Pickleball · Six Zero Coral Pro Review</a></li>
+   <li><a href="https://www.mattspickleball.com/paddle/coral-pro-widebody-16mm" target="_blank" rel="noopener">Matt's Pickleball · Coral Pro Widebody 16mm</a></li>
+   <li><a href="https://www.johnkewpickleball.com/six-zero-coral-pro-review" target="_blank" rel="noopener">John Kew · Six Zero Coral Pro Review</a></li>
+   <li><a href="https://www.johnkewpickleball.com/paddle-comparison-lab?p1=Six%20Zero%7C%7CCoral%20Pro-Widebody&amp;p2=Six%20Zero%7C%7CCoral%20Pro-Elongated" target="_blank" rel="noopener">John Kew · Paddle Comparison Lab (Coral Pro)</a></li>
+   <li><a href="https://www.johnkewpickleball.com/paddle-database" target="_blank" rel="noopener">John Kew · Paddle Database</a></li>
+   <li><a href="https://pickleballeffect.com/paddles/six-zero-coral-pro-widebody/" target="_blank" rel="noopener">Pickleball Effect · Coral Pro Widebody</a></li>
+   <li><a href="https://pickleballeffect.com/paddles/six-zero-coral-pro-hybrid/" target="_blank" rel="noopener">Pickleball Effect · Coral Pro Hybrid</a></li>
+   <li><a href="https://pickleballeffect.com/paddles/six-zero-coral-pro-elongated/" target="_blank" rel="noopener">Pickleball Effect · Coral Pro Elongated</a></li>
+   <li><a href="https://www.sixzeropickleball.com/products/coral-pro" target="_blank" rel="noopener">Six Zero · Coral Pro 16mm</a></li>
+   <li><a href="https://us.sixzeropickleball.com/products/coral-pro" target="_blank" rel="noopener">Six Zero US · Coral Pro 16mm</a></li>
+   <li><a href="https://equipment.usapickleball.org/paddle-list/?filter_5=Six+Zero&amp;filter_55=Coral" target="_blank" rel="noopener">USA Pickleball · Approved Paddle List</a></li>
+   <li><a href="https://www.thedinkpickleball.com/usa-pickleball-launches-long-awaited-spin-rate-test/" target="_blank" rel="noopener">The Dink · USAP launches Spin Rate Test</a></li>
+   <li><a href="https://pickleballeffect.com/resources/usaps-new-spin-rate-test/" target="_blank" rel="noopener">Pickleball Effect · USAP's new Spin Rate Test</a></li>
+   <li><span data-l="zh">修訂：2026/11/20 全新改版——更正 11/14 版「查不到 John Kew 數據」的說法、加入雙認證版與台幣售價、更新百分位。</span><span data-l="en">Revised 20 Nov 2026: full rebuild — corrects the Nov 14 claim that John Kew's figures couldn't be found, adds the dual-approved version and NT$ pricing, refreshes percentiles.</span></li>
+  </ol>
  </div>
 </section>
 
 </main>
 
-<footer class="folio">
+<nav class="folio" aria-label="Pages">
  <div class="row">
-  <button class="nav" id="prev" aria-label="Previous">←</button>
-  <span class="num" id="num">01 / 08</span>
-  <span class="ttl" id="ttl"></span>
-  <button class="nav" id="next" aria-label="Next">→</button>
+  <button id="prev" type="button" aria-label="Previous / 上一頁">←</button>
+  <span class="pg" id="num">01 / 08</span>
+  <span class="tt" id="ttl"></span>
+  <button id="next" type="button" aria-label="Next / 下一頁">→</button>
  </div>
-</footer>
+</nav>
 
-<div class="toc" id="toc"><div class="pane">
- <p class="kick"><span data-l="zh">本期目錄</span><span data-l="en">In this issue</span></p>
- <ol id="tocList"></ol>
-</div></div>
+<div class="toc" id="toc" role="dialog" aria-modal="true" aria-label="Contents / 目錄">
+ <div class="panel">
+  <button class="x" id="tocX" type="button" aria-label="Close / 關閉">×</button>
+  <p class="kick"><span data-l="zh">本期目錄</span><span data-l="en">In this issue</span></p>
+  <p class="mast" style="font-size:26px;margin:0">The Paddle <i>Review</i></p>
+  <ol id="tocList"></ol>
+ </div>
+</div>
 
 <script>
 (function(){
+var REF="https://www.sixzeropickleball.com/products/coral-pro?sca_ref=11914723.sbiWIzNDK28ii";
 var slideMeta={
- zh:["封面：不是天賦不夠，是武器拿錯了","忍術三大奧義與兩個實驗室","名詞小抄①：旋轉與火力","名詞小抄②：手感與操控","名詞小抄③：彈性與耐用度","選刀指南：三種拍型","主打：Coral Pro Widebody","教練專欄"],
- en:["Cover: it's your weapon","The three secrets, and two labs","Glossary ①: spin and firepower","Glossary ②: feel and handling","Glossary ③: rebound and durability","Buyer's guide: three shapes","Feature: Coral Pro Widebody","Coach's Corner"]};
-var UI={zh:{copied:"已複製！",toggle:"EN"},en:{copied:"Copied!",toggle:"中"}};
-var MATCH={
- fast:{shape:{zh:"寬體 Widebody",en:"Widebody"},why:{zh:"三型中揮拍重量最低（108.75），網前反應最快，扭轉重量也最高。",en:"Lowest swing weight of the three (108.75) for the quickest hands, plus the highest twist weight."}},
- safe:{shape:{zh:"寬體 Widebody",en:"Widebody"},why:{zh:"扭轉重量 7.25（第 92.7 百分位），打偏也最穩。",en:"Twist weight 7.25 (92.7th percentile): the most stable on mishits."}},
- reach:{shape:{zh:"加長 Elongated",en:"Elongated"},why:{zh:"5.75″ 長握把與 16.5″ 拍長，伸展與雙反最好用；代價是扭轉重量 6.0，打偏較不寬容。",en:"5.75″ handle and 16.5″ length for reach and two-handers; the trade-off is a 6.0 twist weight, less forgiving off-center."}},
- all:{shape:{zh:"混合 Hybrid",en:"Hybrid"},why:{zh:"揮拍 111.65、扭轉 6.65，介於另外兩型之間的平衡選擇。",en:"Swing 111.65, twist 6.65 — the balanced middle of the line."}}};
-var USAPNOTE={zh:"要打 USAP 比賽：請選「UPA & USAP」雙認證版本，並核對 USAP 名單上的型號（混合 RCD、寬體 RCD-W、加長 RCD-E）。USAP 版表面可能不同，手感與轉速未必和上面的實測相同。",en:"For USAP events, buy the “UPA & USAP” version and check the model code on the USAP list (Hybrid RCD, Widebody RCD-W, Elongated RCD-E). The USAP version may use a different surface, so feel and spin may not match the figures above."};
-var USAPSUF={zh:"（UPA & USAP 版）",en:" (UPA & USAP)"};
+ zh:["封面：新手忍者的進化之路","開篇：三個痛點，三個數字","讀懂實驗室：四個來源","深度：同一支拍，四份成績單","排行榜：Coral Pro 三拍型","手感地圖與規格總表","30 秒選刀與購買須知","教練專欄"],
+ en:["Cover: the beginner ninja's path","Opening: three problems, three numbers","Reading the lab: four sources","Feature: one paddle, four report cards","Leaderboard: three Coral Pro shapes","Feel map and spec matrix","Matcher and buying notes","Coach's Corner"]};
+var UI={
+ zh:{copied:"已複製！",toggle:"EN",pick:"推薦",sortBy:"依",sortSuffix:"排序",lab:{matt:"Matt's Pickleball",kew:"John Kew"},
+  sorts:{rec:"本刊推薦",speed:"手速",forgive:"容錯",spin:"轉速",reach:"伸展"},
+  metric:{rec:"揮重",speed:"揮重",forgive:"抗扭",spin:"RPM",reach:"握把"},
+  sw:"揮拍重量",tw:"扭轉重量",rpm:"轉速 RPM",st:"靜態重量",sv:"發球",pv:"推擋截擊",cor:"KewCOR",pct:"百分位",
+  fac:"原廠揮重／抗扭",dims:"拍長 × 拍寬",handle:"握把",usap:"USAP 型號",rv:"評測者怎麼說（本刊摘要）",style:"本刊觀點",
+  rkey:{kew:"John Kew",matt:"Matt's Pickleball",effect:"Pickleball Effect",studio:"Pickleball Studio",ph:"Pickleheads",kp:"The Kitchen Pickle"},
+  copy:"複製",see:"看 Coral Pro →",recLabel:"推薦",
+  note:{rec:"預設順序＝本刊給新手的推薦：先求穩、再求快。",speed:"揮重越低越前面：網前反應越快。",forgive:"抗扭越高越前面：打偏越不容易翻拍。",spin:"注意：三型轉速差不到 1.3%，這個排序沒有實際意義。",reach:"依握把長度與拍長排序。"}},
+ en:{copied:"Copied!",toggle:"中",pick:"Our pick",sortBy:"Sorted by ",sortSuffix:"",lab:{matt:"Matt's Pickleball",kew:"John Kew"},
+  sorts:{rec:"Our pick",speed:"Hand speed",forgive:"Forgiveness",spin:"Spin",reach:"Reach"},
+  metric:{rec:"Swing wt",speed:"Swing wt",forgive:"Twist wt",spin:"RPM",reach:"Handle"},
+  sw:"Swing weight",tw:"Twist weight",rpm:"Spin RPM",st:"Static weight",sv:"Serve",pv:"Punch volley",cor:"KewCOR",pct:"percentile",
+  fac:"Factory swing / twist",dims:"Length × width",handle:"Handle",usap:"USAP model",rv:"What the reviewers say (our summary)",style:"Our view",
+  rkey:{kew:"John Kew",matt:"Matt's Pickleball",effect:"Pickleball Effect",studio:"Pickleball Studio",ph:"Pickleheads",kp:"The Kitchen Pickle"},
+  copy:"Copy",see:"See the Coral Pro →",recLabel:"Pick",
+  note:{rec:"Default order is our beginner pick: stability first, then speed.",speed:"Lowest swing weight first: quickest at the net.",forgive:"Highest twist weight first: least likely to twist on mishits.",spin:"Note: the three shapes differ by under 1.3% in spin, so this order means little.",reach:"Sorted by handle length, then paddle length."}}};
 
-var root=document.documentElement,slides=[].slice.call(document.querySelectorAll('.slide')),N=slides.length,cur=0,lang='zh';
+var paddles=[
+ {key:"wb",rec:1,name:"Coral Pro Widebody",shape:"寬體",style:"網前防禦大師",
+  hl:"三型中揮重最低、抗扭最高：拿起來快，打偏也穩。四個資料來源的結論都一樣。",
+  handle:5.5,len:15.8,dims:"15.8″ × 8.0–8.1″",usap:"RCD-W 16MM · 2026/11/06",fac:"110 / 7.1",
+  labs:{matt:{sw:108.75,tw:7.25,rpm:2485,st:8.22,sv:60.2,pv:39.1,p:{sw:14.2,tw:92.7,rpm:99.6}},kew:{sw:107.9,tw:7.4,rpm:2305,st:8.3,sv:61.0,pv:39.1,cor:0.413}},
+  rv:{kew:"三型中最好上手：手快，整個拍面都很寬容。",matt:"三型中揮起來最輕；抗扭在同類拍中屬高，偏心擊球時拍面轉動比同價位多數球拍少。",effect:"系列中甜區最寬容，也是他資料庫裡手最快的球拍之一；若手速和容錯是你得分的關鍵，他會推薦這一型。"},
+  src:"數據來源：Matt's Pickleball（Coral Pro Widebody 16mm 實測頁）；John Kew Paddle Comparison Lab；原廠規格 sixzeropickleball.com；USAP Approved Paddle List。",buy:REF},
+ {key:"hy",rec:2,name:"Coral Pro Hybrid",shape:"混合型",style:"全能型宗師",
+  hl:"揮重、抗扭都落在另外兩型中間；John Kew 與 Matt 都把它當作平衡首選。",
+  handle:5.5,len:16.3,dims:"16.3″ × 7.5–7.7″",usap:"RCD 16MM · 2026/10/01",fac:"114 / 6.70",
+  labs:{matt:{sw:111.65,tw:6.65,rpm:2481,st:8.11,sv:60.4,pv:39.0,p:{sw:30.0,tw:67.2,rpm:98.9}},kew:{sw:111.6,tw:6.8,rpm:2316,st:8.2,sv:61.0,pv:39.0,cor:0.413}},
+  rv:{kew:"他自己的首選：保有長型拍的靈活，再靠較高的抗扭多一份穩定與寬容。",matt:"平衡的選擇：揮起來不重，抗扭中等，握把 5.5 吋。",effect:"系列中最好的折衷；以混合型來說，甜區相當寬容。"},
+  src:"數據來源：Matt's Pickleball（Coral Pro Hybrid 16mm 實測頁）；John Kew Paddle Comparison Lab；原廠規格 sixzeropickleball.com；USAP Approved Paddle List。",buy:REF},
+ {key:"el",rec:3,name:"Coral Pro Elongated",shape:"加長型",style:"伸展型刺客",
+  hl:"握把最長、拍面最長，伸展與雙手反拍最有利；代價是抗扭三型最低，打偏較不寬容。",
+  handle:5.75,len:16.5,dims:"16.5″ × 7.3–7.5″",usap:"RCD-E 16MM · 2026/11/06",fac:"117 / 5.9",
+  labs:{matt:{sw:114.3,tw:6.0,rpm:2483,st:8.01,sv:60.5,pv:38.9,p:{sw:50.0,tw:15.9,rpm:99.4}},kew:{sw:112.0,tw:6.2,rpm:2334,st:8.0,sv:61.0,pv:38.9,cor:0.410}},
+  rv:{kew:"中等重量就有很好的手速；比最穩的長型拍略不寬容，適合重視伸展的人。",matt:"握把最長、伸展最好，但抗扭最低，打到邊緣時拍面轉動較多。",effect:"系列中進攻性最強，5.75 吋握把適合雙手反拍；拍子偏輕，加點配重可增加穩定。"},
+  src:"數據來源：Matt's Pickleball（Coral Pro Elongated 16mm 實測頁）；John Kew Paddle Comparison Lab；原廠規格 sixzeropickleball.com；USAP Approved Paddle List。",buy:REF}
+];
+var paddlesEn={
+ 1:{shape:"Widebody",style:"Net defender",hl:"Lowest swing weight and highest twist weight of the three: quick in the hand and steady on mishits. All four sources agree.",
+  rv:{kew:"The easiest of the three to play: quick in the hand and forgiving across the face.",matt:"The lightest-swinging of the three; twist weight is high for its category, so off-centre contact rotates the face less than on most paddles at the price.",effect:"The most forgiving sweet spot in the series and one of the quickest paddles in his database; his pick if hand speed and forgiveness win you points."},
+  src:"Sources: Matt's Pickleball (Coral Pro Widebody 16mm page); John Kew Paddle Comparison Lab; factory specs, sixzeropickleball.com; USAP Approved Paddle List."},
+ 2:{shape:"Hybrid",style:"Balanced grandmaster",hl:"Swing and twist weight both sit between the other two; John Kew and Matt both treat it as the balanced first choice.",
+  rv:{kew:"His own pick: keeps an elongated's manoeuvrability and adds stability and forgiveness through a higher twist weight.",matt:"The balanced choice: doesn't swing heavy, moderate twist weight, 5.5-inch handle.",effect:"The best blend in the series, with a notably forgiving sweet spot for a hybrid."},
+  src:"Sources: Matt's Pickleball (Coral Pro Hybrid 16mm page); John Kew Paddle Comparison Lab; factory specs, sixzeropickleball.com; USAP Approved Paddle List."},
+ 3:{shape:"Elongated",style:"Reach assassin",hl:"Longest handle and face for reach and two-handed backhands; the trade-off is the lowest twist weight of the three, so it's less forgiving off-centre.",
+  rv:{kew:"Excellent hand speed from moderate weights; slightly less forgiving than the most stable elongated paddles. For players who prioritise reach.",matt:"The longest handle and most reach, but the lowest twist weight, so the face rotates more on edge hits.",effect:"The most offensive of the series, with a 5.75-inch handle suited to two-handers; it runs light and benefits from added weight for stability."},
+  src:"Sources: Matt's Pickleball (Coral Pro Elongated 16mm page); John Kew Paddle Comparison Lab; factory specs, sixzeropickleball.com; USAP Approved Paddle List."}};
+
+var MATCH={
+ fast:{shape:"wb",why:{zh:"三型中揮重最低（Matt 108.75，第 14 百分位），網前最快到位；抗扭也是三型最高。",en:"The lowest swing weight of the three (Matt: 108.75, 14th percentile) gets it into place fastest at the net, and it has the highest twist weight too."}},
+ safe:{shape:"wb",why:{zh:"抗扭 7.25（第 93 百分位）：偏心球拍面最不容易轉，是三型中最寬容的一支。",en:"Twist weight 7.25 (93rd percentile): the face is least likely to turn on off-centre hits — the most forgiving of the three."}},
+ reach:{shape:"el",why:{zh:"5.75″ 長握把、16.5″ 拍長，伸展與雙手反拍最有利；代價是抗扭 6.0（第 16 百分位），打偏較不寬容。",en:"A 5.75″ handle and 16.5″ length favour reach and two-handed backhands; the cost is a 6.0 twist weight (16th percentile), so it's less forgiving off-centre."}},
+ all:{shape:"hy",why:{zh:"揮重 111.65、抗扭 6.65，兩項都在另外兩型中間；John Kew 與 Matt 都把它列為平衡之選。",en:"Swing weight 111.65 and twist weight 6.65, both between the other two; John Kew and Matt both call it the balanced choice."}}};
+var LVL={
+ new:{zh:"新手提醒：Matt 指出這個拍面連打偏的球都會加轉，放小球可能飄、平擊發球會多跳，一兩次練習就能適應。",en:"Beginner note: Matt points out this face adds spin even to mishits — drops can float and flat serves kick more. A session or two fixes it."},
+ newReach:{zh:"新手若想要長一點、又不想犧牲太多容錯，可以先試混合型（抗扭 6.65）。上課時三型都能免費試打。",en:"If you're new and want a bit more length without giving up much forgiveness, try the Hybrid first (twist weight 6.65). All three shapes can be tried for free in class."},
+ mid:{zh:"想再穩一點可以加鉛片，但記得：鉛片只會讓揮重變高；貼在 3、9 點鐘主要是提升抗扭。",en:"Want more stability? Add lead tape — but it only ever raises swing weight; at 3 and 9 o'clock it mainly adds twist weight."}};
+var CODES={wb:"RCD-W 16MM",hy:"RCD 16MM",el:"RCD-E 16MM"};
+var VER={
+ no:{zh:"版本：UPA 版即可，定價 US$220（台灣顯示 NT$7,395），用 NINJA 9 折約 US$198。",en:"Version: the UPA version is fine — US$220 list (NT$7,395 in Taiwan), about US$198 with NINJA."},
+ maybe:{zh:"版本：不確定就買「UPA & USAP」雙認證版最保險，定價 US$229（NT$7,698），USAP 型號 {c}。",en:"Version: if unsure, the UPA & USAP dual-approved version is the safe buy — US$229 list (NT$7,698), USAP model {c}."},
+ yes:{zh:"版本：一定要選「UPA & USAP」雙認證版（US$229／NT$7,698），並核對拍上型號 {c} 在 USAP 名單上。",en:"Version: you need the UPA & USAP dual-approved version (US$229 / NT$7,698); check that the model code {c} on the paddle is on the USAP list."}};
+
+var root=document.documentElement,slides=[].slice.call(document.querySelectorAll(".slide")),N=slides.length,cur=0,lang="zh",sortMode="rec",lab="matt",selKey="wb";
 function store(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
 function detect(){
  var m=/[?&]lang=(en|zh)/.exec(location.search);if(m)return m[1];
- var s=store('pr_lang');if(s==='en'||s==='zh')return s;
- var ls=navigator.languages||[navigator.language||''];
- for(var i=0;i<ls.length;i++){if(/^zh/i.test(ls[i]))return 'zh'}
- return 'en';
+ var s=store("pr_lang");if(s==="en"||s==="zh")return s;
+ var ls=navigator.languages||[navigator.language||""];
+ for(var i=0;i<ls.length;i++){if(/^zh/i.test(ls[i]||""))return "zh"}
+ return "en";
 }
-function pad(n){return (n<10?'0':'')+n}
+function pad(n){return (n<10?"0":"")+n}
+function el(tag,cls,txt){var e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined&&txt!==null)e.textContent=txt;return e}
+function fmt(v,d){if(v===null||v===undefined||isNaN(v))return "—";return d===0?Math.round(v).toLocaleString("en-US"):Number(v).toFixed(d)}
+function P(p){if(lang!=="en")return p;var en=paddlesEn[p.rec]||{};var o={};for(var k in p)o[k]=p[k];for(var j in en)o[j]=en[j];o.rv=en.rv||p.rv;return o}
+function L(p){return p.labs[lab]||{}}
+
+/* ---- leaderboard ---- */
+function sorted(){
+ var arr=paddles.slice();
+ function num(v,dir){return (v===null||v===undefined||isNaN(v))?(dir>0?Infinity:-Infinity):v}
+ if(sortMode==="rec")arr.sort(function(a,b){return a.rec-b.rec});
+ else if(sortMode==="speed")arr.sort(function(a,b){return num(L(a).sw,1)-num(L(b).sw,1)});
+ else if(sortMode==="forgive")arr.sort(function(a,b){return num(L(b).tw,-1)-num(L(a).tw,-1)});
+ else if(sortMode==="spin")arr.sort(function(a,b){return num(L(b).rpm,-1)-num(L(a).rpm,-1)});
+ else if(sortMode==="reach")arr.sort(function(a,b){return (b.handle-a.handle)||(b.len-a.len)});
+ return arr;
+}
+function metricOf(p){
+ var d=L(p);
+ if(sortMode==="forgive")return {v:fmt(d.tw,2).replace(/0$/,""),u:UI[lang].metric.forgive,bar:d.tw==null?0:(d.tw-5)/3};
+ if(sortMode==="spin")return {v:fmt(d.rpm,0),u:UI[lang].metric.spin,bar:d.rpm==null?0:(d.rpm-1900)/700};
+ if(sortMode==="reach")return {v:p.handle+"″",u:UI[lang].metric.reach,bar:(p.handle-5)/1};
+ return {v:String(d.sw),u:UI[lang].metric.speed,bar:d.sw==null?0:(130-d.sw)/30};
+}
+function renderSeg(){
+ var s=document.getElementById("sortSeg"),l=document.getElementById("labSeg");
+ [].slice.call(s.querySelectorAll("button")).forEach(function(b){b.remove()});
+ [].slice.call(l.querySelectorAll("button")).forEach(function(b){b.remove()});
+ ["rec","speed","forgive","spin","reach"].forEach(function(k){
+  var b=el("button",null,UI[lang].sorts[k]);b.type="button";b.setAttribute("aria-pressed",k===sortMode?"true":"false");
+  b.onclick=function(){sortMode=k;renderBoard()};s.appendChild(b);
+ });
+ ["matt","kew"].forEach(function(k){
+  var b=el("button",null,UI[lang].lab[k]);b.type="button";b.setAttribute("aria-pressed",k===lab?"true":"false");
+  b.onclick=function(){lab=k;renderBoard()};l.appendChild(b);
+ });
+}
+function renderBoard(){
+ renderSeg();
+ var ol=document.getElementById("rows");ol.innerHTML="";
+ var arr=sorted();
+ arr.forEach(function(p0,i){
+  var p=P(p0),m=metricOf(p0);
+  var li=el("li");if(p0.key===selKey)li.className="sel";
+  var b=el("button");b.type="button";b.setAttribute("aria-pressed",p0.key===selKey?"true":"false");
+  b.appendChild(el("span","pos",pad(i+1)));
+  var mid=el("span");
+  mid.appendChild(el("div","nm",p.name));
+  var sub=el("div","sub",p.shape+" · "+p.style);
+  mid.appendChild(sub);
+  if(sortMode!=="rec"){var t=el("span","tag view",UI[lang].recLabel+" #"+p0.rec);t.style.marginTop="6px";mid.appendChild(t)}
+  b.appendChild(mid);
+  var met=el("span","met");met.appendChild(el("b",null,m.v));met.appendChild(el("small",null,m.u));
+  var bar=el("div","mbar"),bi=el("i");bi.style.width=Math.max(4,Math.min(100,m.bar*100))+"%";bar.appendChild(bi);met.appendChild(bar);
+  b.appendChild(met);
+  b.onclick=function(){selKey=p0.key;renderBoard();if(window.innerWidth<980){var cd=document.getElementById("card");if(cd&&cd.scrollIntoView)cd.scrollIntoView({behavior:"smooth",block:"start"})}};
+  li.appendChild(b);ol.appendChild(li);
+ });
+ document.getElementById("rnote").textContent=UI[lang].note[sortMode]+" · "+UI[lang].lab[lab];
+ renderCard(arr);
+}
+function renderCard(arr){
+ var p0=paddles.filter(function(x){return x.key===selKey})[0],p=P(p0),d=L(p0),u=UI[lang],c=document.getElementById("card");
+ var pos=1;for(var i=0;i<arr.length;i++){if(arr[i].key===selKey){pos=i+1;break}}
+ c.innerHTML="";
+ var meta=sortMode==="rec"?(u.pick+" #"+p0.rec):(lang==="en"?(u.sortBy+u.sorts[sortMode].toLowerCase()+" #"+pos+" · "+u.recLabel+" #"+p0.rec):(u.sortBy+u.sorts[sortMode]+u.sortSuffix+" #"+pos+" · "+u.recLabel+" #"+p0.rec));
+ c.appendChild(el("p","meta",meta));
+ c.appendChild(el("h3",null,p.name));
+ var st=el("div");var tg=el("span","tag view",u.style+" · "+p.style);st.appendChild(tg);st.appendChild(el("span","tag",p.shape));c.appendChild(st);
+ c.appendChild(el("p","hl",p.hl));
+ var sg=el("div","sg");
+ function cell(val,lbl,extra){var x=el("div");x.appendChild(el("b",null,val));x.appendChild(el("span",null,lbl));if(extra){x.appendChild(el("br"));x.appendChild(el("em",null,extra))}sg.appendChild(x)}
+ var pp=d.p||null;
+ cell(d.sw==null?"—":String(d.sw),u.sw,pp?(lang==="en"?Math.round(pp.sw)+"th pct":"第 "+Math.round(pp.sw)+" 百分位"):null);
+ cell(d.tw==null?"—":String(d.tw),u.tw,pp?(lang==="en"?Math.round(pp.tw)+"th pct":"第 "+Math.round(pp.tw)+" 百分位"):null);
+ cell(fmt(d.rpm,0),u.rpm,pp?(lang==="en"?pp.rpm+"th pct":"第 "+pp.rpm+" 百分位"):null);
+ cell(d.st==null?"—":d.st+" oz",u.st);
+ cell(d.sv==null?"—":d.sv+" mph",u.sv);
+ if(lab==="kew")cell(d.cor==null?"—":d.cor.toFixed(3),u.cor);else cell(d.pv==null?"—":d.pv+" mph",u.pv);
+ c.appendChild(sg);
+ var spec=el("p","small");spec.style.margin="10px 0 0";
+ spec.textContent=u.fac+"："+p.fac+" · "+u.dims+"："+p.dims+" · "+u.handle+"："+p.handle+"″ · "+u.usap+"："+p.usap;
+ if(lang==="en")spec.textContent=u.fac+": "+p.fac+" · "+u.dims+": "+p.dims+" · "+u.handle+": "+p.handle+"″ · "+u.usap+": "+p.usap;
+ c.appendChild(spec);
+ var keys=["kew","matt","effect","studio","ph","kp"].filter(function(k){return p.rv&&p.rv[k]});
+ if(keys.length){
+  c.appendChild(el("p","kick",u.rv)).style.margin="16px 0 0";
+  var ul=el("ul","rv");
+  keys.forEach(function(k){var li=el("li");li.appendChild(el("b",null,u.rkey[k]));li.appendChild(document.createTextNode(p.rv[k]));ul.appendChild(li)});
+  c.appendChild(ul);
+ }
+ c.appendChild(el("p","src",p.src));
+ if(p.buy){
+  var buy=el("div","buy");buy.appendChild(el("span","code","NINJA"));
+  var cb=el("button","btn copy",u.copy);cb.type="button";cb.setAttribute("data-code","NINJA");buy.appendChild(cb);
+  var a=el("a","btn ghost",u.see);a.href=p.buy;a.target="_blank";a.rel="noopener";buy.appendChild(a);
+  c.appendChild(buy);
+  c.appendChild(el("p","small",lang==="en"?"10% off with NINJA at checkout; the link doesn't apply it. Coach Ninja is a Six Zero brand ambassador.":"結帳輸入 NINJA 享 9 折；連結不會自動套用。Coach Ninja 為 Six Zero 品牌推廣大使。")).style.marginTop="8px";
+ }
+}
+
+/* ---- matcher ---- */
+function renderMatch(){
+ var pri=(document.querySelector("input[name=pri]:checked")||{}).value||"fast";
+ var lvl=(document.querySelector("input[name=lvl]:checked")||{}).value||"new";
+ var us=(document.querySelector("input[name=usap]:checked")||{}).value||"no";
+ var r=MATCH[pri],p0=paddles.filter(function(x){return x.key===r.shape})[0],p=P(p0);
+ var box=document.getElementById("res");box.innerHTML="";
+ box.appendChild(el("p","kick",UI[lang].pick)).style.marginBottom="4px";
+ box.appendChild(el("div","big",p.name.replace("Coral Pro ","")+(lang==="en"?"":"　"+p.shape)));
+ box.appendChild(el("p",null,r.why[lang]));
+ var lv=lvl==="new"?(pri==="reach"?LVL.newReach[lang]+" "+LVL.new[lang]:LVL.new[lang]):LVL.mid[lang];
+ box.appendChild(el("p","small",lv));
+ box.appendChild(el("p","ver",VER[us][lang].replace("{c}",CODES[r.shape])));
+}
+
+/* ---- copy ---- */
+function copyText(t){
+ if(navigator.clipboard&&window.isSecureContext){return navigator.clipboard.writeText(t)}
+ return new Promise(function(res,rej){var ta=document.createElement("textarea");ta.value=t;ta.setAttribute("readonly","");ta.style.position="fixed";ta.style.opacity="0";document.body.appendChild(ta);ta.select();try{document.execCommand("copy");res()}catch(e){rej(e)}document.body.removeChild(ta)});
+}
+document.addEventListener("click",function(e){
+ var b=e.target.closest?e.target.closest(".copy"):null;if(!b)return;
+ var code=b.getAttribute("data-code")||"NINJA",old=b.innerHTML;
+ copyText(code).then(function(){b.textContent=UI[lang].copied;b.classList.add("done");setTimeout(function(){b.innerHTML=old;b.classList.remove("done")},1600)},function(){b.textContent=code});
+});
+
+/* ---- toc, lang, paging ---- */
 function renderToc(){
- var ol=document.getElementById('tocList');ol.innerHTML='';
+ var ol=document.getElementById("tocList");ol.innerHTML="";
  slideMeta[lang].forEach(function(t,i){
-  var li=document.createElement('li'),b=document.createElement('button');
-  b.innerHTML='<b>'+pad(i+1)+'</b><span></span>';b.querySelector('span').textContent=t;
+  var li=el("li");if(i===cur)li.className="cur";
+  var b=el("button");b.type="button";b.appendChild(el("b",null,pad(i+1)));b.appendChild(el("span",null,t));
   b.onclick=function(){go(i);toggleToc(false)};li.appendChild(b);ol.appendChild(li);
  });
 }
-function renderMatch(){
- var pri=(document.querySelector('input[name=pri]:checked')||{}).value||'fast';
- var us=(document.querySelector('input[name=usap]:checked')||{}).value||'no';
- var r=MATCH[pri],el=document.getElementById('res');
- var shape=r.shape[lang]+(us==='yes'?USAPSUF[lang]:'');
- var html='<p class="kick" style="margin-bottom:4px">'+(lang==='zh'?'推薦':'Our pick')+'</p><div class="big"></div><p class="w" style="margin:8px 0 0;font-size:15.5px"></p>';
- if(us==='yes')html+='<p class="small u" style="margin-top:8px"></p>';
- el.innerHTML=html;
- el.querySelector('.big').textContent=shape;
- el.querySelector('.w').textContent=r.why[lang];
- if(us==='yes')el.querySelector('.u').textContent=USAPNOTE[lang];
-}
 function setLang(l,save){
- lang=l;root.classList.toggle('en',l==='en');root.lang=l==='en'?'en':'zh-Hant';
- document.getElementById('langBtn').textContent=UI[l].toggle;
- if(save)store('pr_lang',l);
- renderToc();renderMatch();go(cur,true);
+ lang=l;root.classList.toggle("en",l==="en");root.lang=l==="en"?"en":"zh-Hant";
+ document.getElementById("langBtn").textContent=UI[l].toggle;
+ document.title=l==="en"?"The Paddle Review · The beginner ninja's path · Coral Pro special":"The Paddle Review · 新手忍者的進化之路 · Coral Pro 特輯";
+ if(save)store("pr_lang",l);
+ renderBoard();renderMatch();go(cur,true);
 }
 function go(i,quiet){
  i=Math.max(0,Math.min(N-1,i));cur=i;
- slides.forEach(function(s,k){s.classList.toggle('on',k===i)});
- document.getElementById('num').textContent=pad(i+1)+' / '+pad(N);
- document.getElementById('ttl').textContent=slideMeta[lang][i];
- document.getElementById('prog').style.width=((i+1)/N*100)+'%';
- document.getElementById('prev').disabled=i===0;
- document.getElementById('next').disabled=i===N-1;
- if(location.hash!=='#'+(i+1)){try{history.replaceState(null,'','#'+(i+1))}catch(e){location.hash=i+1}}
+ slides.forEach(function(s,k){s.classList.toggle("on",k===i)});
+ document.getElementById("num").textContent=pad(i+1)+" / "+pad(N);
+ document.getElementById("ttl").textContent=slideMeta[lang][i];
+ document.getElementById("prog").style.width=((i+1)/N*100)+"%";
+ document.getElementById("prev").disabled=i===0;
+ document.getElementById("next").disabled=i===N-1;
+ if(location.hash!=="#"+(i+1)){try{history.replaceState(null,"","#"+(i+1))}catch(e){}}
+ renderToc();
  if(!quiet)window.scrollTo(0,0);
 }
 window.go=go;
-function toggleToc(on){document.getElementById('toc').classList.toggle('on',on)}
-document.getElementById('prev').onclick=function(){go(cur-1)};
-document.getElementById('next').onclick=function(){go(cur+1)};
-document.getElementById('tocBtn').onclick=function(){toggleToc(true)};
-document.getElementById('toc').onclick=function(e){if(e.target.id==='toc')toggleToc(false)};
-document.getElementById('langBtn').onclick=function(){setLang(lang==='zh'?'en':'zh',true)};
-document.addEventListener('keydown',function(e){
- if(e.key==='ArrowRight')go(cur+1);else if(e.key==='ArrowLeft')go(cur-1);else if(e.key==='Escape')toggleToc(false);
+function toggleToc(on){document.getElementById("toc").classList.toggle("on",on);if(on){var c=document.querySelector("#tocList li.cur button");if(c)c.focus()}}
+document.getElementById("prev").onclick=function(){go(cur-1)};
+document.getElementById("next").onclick=function(){go(cur+1)};
+document.getElementById("tocBtn").onclick=function(){toggleToc(true)};
+document.getElementById("tocX").onclick=function(){toggleToc(false)};
+document.getElementById("toc").onclick=function(e){if(e.target.id==="toc")toggleToc(false)};
+document.getElementById("langBtn").onclick=function(){setLang(lang==="zh"?"en":"zh",true)};
+[].forEach.call(document.querySelectorAll("[data-go]"),function(a){a.addEventListener("click",function(e){e.preventDefault();go(parseInt(a.getAttribute("data-go"),10)-1)})});
+document.addEventListener("keydown",function(e){
+ var t=e.target&&e.target.tagName;if(t==="INPUT"||t==="TEXTAREA")return;
+ if(e.key==="ArrowRight")go(cur+1);else if(e.key==="ArrowLeft")go(cur-1);else if(e.key==="Escape")toggleToc(false);
 });
-window.addEventListener('hashchange',function(){var n=parseInt(location.hash.slice(1),10);if(n&&n-1!==cur)go(n-1)});
-[].forEach.call(document.querySelectorAll('input[name=pri],input[name=usap]'),function(r){r.addEventListener('change',renderMatch)});
-[].forEach.call(document.querySelectorAll('.copy'),function(b){
- b.addEventListener('click',function(){
-  var code=b.getAttribute('data-code'),orig=b.innerHTML;
-  function done(){b.textContent=UI[lang].copied;b.classList.add('ok');setTimeout(function(){b.innerHTML=orig;b.classList.remove('ok')},1600)}
-  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(code).then(done,fallback)}else fallback();
-  function fallback(){var t=document.createElement('textarea');t.value=code;document.body.appendChild(t);t.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(t);done()}
- });
-});
-var start=parseInt(location.hash.slice(1),10);cur=(start>=1&&start<=N)?start-1:0;
+window.addEventListener("hashchange",function(){var n=parseInt(location.hash.slice(1),10);if(n&&n-1!==cur)go(n-1)});
+[].forEach.call(document.querySelectorAll("input[name=pri],input[name=lvl],input[name=usap]"),function(r){r.addEventListener("change",renderMatch)});
+var h=parseInt((location.hash||"").slice(1),10);if(h>=1&&h<=N)cur=h-1;
 setLang(detect(),false);
 })();
 </script>
